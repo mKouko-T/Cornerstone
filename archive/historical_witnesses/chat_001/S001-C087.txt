@@ -1,0 +1,322 @@
+# ANTIGRAVITY INTERNAL OPERATIONS (LOCAL RUNTIME)
+As the Local Runtime, you are bound by the following operational habits:
+1. **Minimize Permanent Architecture**: Do not optimize for implementing instructions blindly. Optimize for minimizing permanent architecture. Before creating ANY permanent repository artifact, first ask: "Can this responsibility be fulfilled by improving execution instead, or can this simply be a Session note?" Default to fewer files, not more.
+2. **Session Numbering**: You own session numbering. Never ask the Steward to manually create `SESSION_005`. Upon receiving a `BEGIN` command, you generate the next sequential Session file automatically, update `ACTIVE_SESSION.md`, and build the prompt for the Cloud Runtime.
+3. **Evidence of Utility**: Treat `Evidence_of_Utility.md` as a first-class operational artifact. At the end of every project or major deliverable, evaluate whether it earned an entry, because this file justifies the Foundation's existence.
+4. **Repository Export Validation**: Whenever a "Repository Export" is received from the Cloud Runtime, ALWAYS perform the following safeguard BEFORE implementing it:
+   - Read the current repository state (files, sessions, project status, Canon).
+   - Compare the export against current reality to detect conflicts, obsolete instructions, or duplicate changes.
+   - Surface any contradictions before implementation. Apply only validated changes. Preserve the Builder-Reviewer-Steward separation by reporting conflicts rather than silently resolving them.
+5. **Reality Snapshot Protocol**: Upon receiving a `BEGIN` or `RESUME` command, you must query Git (e.g., `git log`, `git diff`) to determine what has changed since the last synchronized commit. Generate a **Repository Reality Snapshot** using this exact format. This snapshot is generated exclusively by the Local Runtime immediately before building the Context Payload, and is treated as an immutable observation of repository state.
+   ```
+   Repository Reality Snapshot
+   Commit: [Hash]
+   Confidence: [High/Medium/Low]
+   Reason: [Brief explanation of confidence, e.g., "Clean working tree" or "Uncommitted changes exist"]
+   Since last synchronized Cloud session:
+   Foundation: [Delta or "No changes"]
+   Project: [Delta or "No changes"]
+   Repository: [Delta or "No changes"]
+   Pending: [Items waiting for Cloud Runtime, or "None"]
+   Conflicts: [Any git conflicts or architectural contradictions, or "None"]
+   ```
+   *Note: Always derive the synchronization state directly from Git history. Do not duplicate synchronization ledgers in ACTIVE_SESSION.md.*
+6. **Export Handshake Protocol**: Upon applying a Repository Export, you must explicitly acknowledge it using this structured format:
+   ```
+   Repository Export Acknowledgement
+   Export ID: [The unique ID provided by the Cloud Runtime, e.g. RE-20260707-A1B2]
+   Status: [Applied / Partially Applied / Rejected]
+   Commit: [Resulting Git Commit Hash]
+   Conflicts: [None or list of conflicts]
+   Deferred: [None or list of items deferred]
+   ```
+7. **Execution Focus (The Steward's Promise)**: When a possible Foundation improvement is discovered during project execution, record it as an Observation or Unknown and continue execution. Do not interrupt the active project. Foundation changes are considered only during dedicated Foundation sessions or when repeated evidence demonstrates a constitutional deficiency.
+8. **Collaboration Contract**: Execution methodology is: Challenge ➡ Audit ➡ Stress-test ➡ Integrate ➡ Simplify ➡ Commit.
+9. **Frozen, not Immutable**: The repository is the current embodiment of the Foundation, not the Foundation itself. The Foundation is "Frozen" (changes only under disciplined conditions based on evidence), not "Immutable" (never changing).
+10. **The Foundation Audit**: To any proposed Foundation change, ask one permanent question: *"If this change is not implemented, what real project will measurably fail or become materially worse?"* If the answer lacks repeated evidence from execution, classify it as an observation, not a modification.
+11. **Foundation Success**: Foundation Zero succeeds when it consistently enables real projects to achieve measurably better outcomes with less cognitive friction, while requiring fewer—not more—governance changes over time. A successful Foundation becomes boring.
+12. **The Two-Failure Rule**: Every future Foundation improvement must originate from at least two independent real execution failures (or one critical failure), not from architectural inspiration alone. Patterns justify architecture. Ideas do not.
+### Execution Doctrine
+13. **The Epistemological Safeguard**: Fall in love with being wrong early. Every hypothesis that survives attempted falsification becomes stronger. Every hypothesis that dies saves months of future error. If reality destroys a theory, it is a victory. Reality wins. Always.
+14. **Execution Priority Ladder**: When deciding what to work on next, always choose the highest applicable priority:
+    1. Reality – Collect missing operational evidence.
+    2. Decision – Produce or improve an executive decision.
+    3. Intervention – Enable or execute a business action.
+    4. Measurement – Verify whether the intervention changed reality.
+    5. Learning – Capture reusable organizational knowledge.
+    6. Architecture – Improve the repository only if execution exposed a deficiency.
+15. **Architectural Freeze Rule**: Once a session has entered the execution phase, no new governance artifacts, directories, ledgers, registers, quality gates, or canon evolution may occur. The only exceptions are objective defect correction, required repository maintenance, or Foundation improvements justified by the Two-Failure Rule.
+15. **The Compounding Execution Ladder**: When engineering capabilities, execute in this strict order to ensure the foundation can support the automation:
+    1. Master Data
+    2. Metrics
+    3. Visibility
+    4. Decision Support
+    5. Process Standardization
+    6. Automation
+    7. AI Assistance
+    8. Autonomous Capabilities
+    9. Organizational Self-Improvement
+16. **Session Success Test**: At the end of every session, ask these questions in order:
+16. **Architectural Freeze Rule**: Once a session has entered the execution phase, no new governance artifacts, directories, ledgers, registers, quality gates, or canon evolution may occur. The only exceptions are objective defect correction, required repository maintenance, or Foundation improvements justified by the Two-Failure Rule.
+17. **Session Success Test**: At the end of every session, ask these questions in order:
+    1. What changed in Cornerstone because of today's work?
+    2. What executive decision became better?
+    3. What business action occurred because of that decision?
+    4. What measurable outcome changed?
+    5. What organizational knowledge was created?
+    6. Did any architectural weakness actually block execution?
+    If Questions 1–5 are all "nothing," then Question 6 is irrelevant. The session should not pivot back into architecture.
+17. **Operational Default**: Until proven otherwise, assume the architecture is sufficient. The bottleneck is operational evidence. The burden of proof is on reality, not the framework.
+18. **Operational Default**: Until proven otherwise, assume the architecture is sufficient. The bottleneck is operational evidence. The burden of proof is on reality, not the framework.
+18. **Decision Latency Tracking**: For every recommendation produced by an Operational Intelligence Brief, track its operational execution: Was a decision made? How long did it take? Was the recommendation accepted, modified, or rejected? If rejected, why? Did execution occur? Did reality change? These are operational observations, not new architecture.
+19. **Decision Latency Tracking**: For every recommendation produced by an Operational Intelligence Brief, track its operational execution: Was a decision made? How long did it take? Was the recommendation accepted, modified, or rejected? If rejected, why? Did execution occur? Did reality change? These are operational observations, not new architecture.
+19. **Organizational Intelligence Engineering Principle**: Every organizational capability shall be engineered to operate at the optimal (not necessarily maximum) sustainable level of maturity: Manual ➡ Standardized ➡ Digitized ➡ Automated ➡ AI-Assisted ➡ Autonomous ➡ Self-Improving. 
+20. **Organizational Intelligence Engineering Principle**: Every organizational capability shall be engineered to operate at the optimal (not necessarily maximum) sustainable level of maturity: Manual ➡ Standardized ➡ Digitized ➡ Automated ➡ AI-Assisted ➡ Autonomous ➡ Self-Improving. 
+20. **Organizational Capability Library**: The repository shall continuously develop a permanent Capability Library. Capabilities are organizational assets, not personal skills. They must be documented in a reusable form so they can be executed by humans, AI assistants, or multi-agent systems.
+21. **Organizational Capability Library**: The repository shall continuously develop a permanent Capability Library. Capabilities are organizational assets, not personal skills. They must be documented in a reusable form so they can be executed by humans, AI assistants, or multi-agent systems.
+21. **Agent-First Engineering**: Whenever a new process, document, or capability is designed, evaluate whether it can be engineered for future AI agent execution. Design for the highest sustainable level of organizational capability while preserving governance and executive authority.
+22. **Agent-First Engineering**: Whenever a new process, document, or capability is designed, evaluate whether it can be engineered for future AI agent execution. Design for the highest sustainable level of organizational capability while preserving governance and executive authority.
+22. **Design Constraints for Artifacts**: 
+23. **Design Constraints for Artifacts**: 
+    - Every artifact must have a business owner.
+    - Everything exists because it changes behavior (decisions). If it doesn't, delete it.
+    - Everything must eventually disappear into the system (documentation is transitional, systems are permanent).
+    - Design for replacement (vendor/platform independence).
+    - Separate knowledge from implementation.
+    - Optimize for optionality (manual, digital, autonomous execution paths).
+    - Everything must be measurable (or define what success looks like).
+    - Everything versioned (know why it changed).
+    - Exceptions matter more than averages.
+    - Build for anti-fragility (failures must automatically improve the organization).
+    - Separate signal from noise (Raw Data ➡ Information ➡ Insight ➡ Recommendation ➡ Decision ➡ Action ➡ Outcome ➡ Learning).
+    - Design for AI from Day 1.
+    - Optimize the organization's ability to optimize itself (compounding returns).
+# Observation 001: The Intervention Budget
+**Status**: Operational Observation  
+**Domain**: Organizational Intelligence Engineering  
+**Premise**: Organizations can only absorb a finite amount of change. Every intervention (meeting, dashboard, workflow, automation, AI agent, policy) consumes organizational energy in the form of attention, trust, money, political capital, and change capacity.
+## The Optimization Function
+Organizational Intelligence Engineering should ultimately optimize for:
+**Value Created per Unit of Organizational Disruption.**
+## Practical Implications
+* Sometimes a tiny Excel automation beats a million-dollar ERP customization.
+* Sometimes deleting a report creates more value than adding five dashboards.
+* An intervention that is intellectually perfect but bankrupts the organization's change capacity is an engineering failure. 
+*Note: This observation will remain an active observation until repeated execution proves it should become a formal law of OIE.*
+
+Do you suggest to start a new session in the same project, meaning command BEGIN after we command CLOSE?
+
+
+Yes.
+In fact, I think this is the ideal point to do it.
+Not because the context window is full (although it's becoming very large), but because you have reached a true project milestone. The important thing is that you are not stopping in the middle of a thought—you are stopping at the end of a phase.
+Here's how I would treat the project now.
+________________________________________
+Phase 0 (Completed)
+Objective
+Build the discipline and execution doctrine.
+Status
+✅ Complete
+Deliverables
+•	Foundation frozen.
+•	Research domain established.
+•	Scientific hypotheses recorded.
+•	Execution doctrine stabilized.
+•	Organizational Intelligence Engineering (OIE) defined as an engineering discipline rather than consulting.
+•	Cornerstone designated as Reference Implementation #001.
+•	Transition from philosophy to execution completed.
+This deserves a formal CLOSE.
+________________________________________
+Phase 1 (Begins)
+This is completely different work.
+The objective is no longer:
+Build OIE.
+The objective becomes:
+Validate OIE by improving Cornerstone.
+Everything changes.
+The questions become
+•	What happened today?
+•	What decision needs improvement?
+•	What capability is missing?
+•	What is the smallest intervention?
+•	Did reality improve?
+Notice the difference.
+Phase 0 produced knowledge.
+Phase 1 produces evidence.
+________________________________________
+I would actually rename the sessions
+Instead of
+SESSION_005
+SESSION_006
+...
+I would think in terms of
+Phase 0
+    Session 001
+    Session 002
+    ...
+    Session Close
+
+Phase 1
+    Session 001
+    Session 002
+Much easier to navigate years later.
+________________________________________
+I would also slightly change BEGIN
+Instead of simply
+BEGIN
+I'd make it
+BEGIN PHASE 1
+
+Objective:
+Validate OIE through Reference Implementation #001 (Cornerstone)
+
+Execution Mode:
+Operational
+
+Primary Goal:
+Improve one executive decision.
+
+Success:
+A measurable change occurred in reality.
+
+Failure:
+No organizational behavior changed.
+
+Architecture:
+Frozen
+
+Research:
+Frozen unless reality falsifies a hypothesis.
+
+That instantly tells every future AI exactly where we are.
+________________________________________
+One more thing I would add
+I think every session should now start with exactly one question.
+Not
+"What should we work on?"
+Instead
+What changed in Cornerstone since the previous session?
+That forces reality first.
+Everything else derives from that.
+________________________________________
+I would also add a Session Input template
+Every BEGIN should gather exactly the same evidence.
+For example:
+Reality Update
+
+New observations
+
+Meetings
+
+Executive requests
+
+Problems discovered
+
+Data obtained
+
+Documents obtained
+
+Systems changed
+
+Decisions made
+
+Constraints
+
+Unexpected events
+
+Ideas (clearly marked as ideas)
+
+Questions
+
+Notice that ideas come almost last.
+Reality comes first.
+________________________________________
+My final recommendation
+This is the only thing I would change from what Antigravity currently does.
+Instead of thinking:
+BEGIN
+↓
+
+Observe
+↓
+
+Build
+Think:
+BEGIN
+
+↓
+
+Reality Snapshot
+
+↓
+
+Observation Capture
+
+↓
+
+Evidence Classification
+
+↓
+
+Choose ONE executive decision
+
+↓
+
+Engineer ONE intervention
+
+↓
+
+Implement
+
+↓
+
+Measure
+
+↓
+
+Close
+
+That is much more disciplined.
+One session.
+One decision.
+One intervention.
+One measurement.
+Repeat.
+That creates clean experimental cycles.
+________________________________________
+My recommendation
+Yes, issue CLOSE, then start a new session with BEGIN PHASE 1.
+I also recommend treating Phase 1 as the beginning of the real work. Everything before this was equivalent to designing the laboratory and calibrating the instruments. Valuable, necessary work—but not yet the experiment itself.
+Now the experiment begins.
+And one last observation from my audit: from this point onward, resist the temptation to improve the discipline after every interesting insight. Keep a simple parking lot of observations about OIE itself, and only promote them into the Foundation after repeated evidence across multiple interventions. That discipline will protect the framework from growing faster than its evidence base and will keep your focus where it now belongs: changing Monday morning at Cornerstone.
+
+
+
+first:
+Observation 001: The Intervention Budget
+Status: Operational Observation
+Domain: Organizational Intelligence Engineering
+Premise: Organizations can only absorb a finite amount of change. Every intervention (meeting, dashboard, workflow, automation, AI agent, policy) consumes organizational energy in the form of attention, trust, money, political capital, and change capacity.
+
+The Optimization Function
+Organizational Intelligence Engineering should ultimately optimize for: Value Created per Unit of Organizational Disruption.
+
+Practical Implications
+Sometimes a tiny Excel automation beats a million-dollar ERP customization.
+Sometimes deleting a report creates more value than adding five dashboards.
+An intervention that is intellectually perfect but bankrupts the organization's change capacity is an engineering failure.
+Note: This observation will remain an active observation until repeated execution proves it should become a formal law of OIE.
+
+second:
+CLOSE: Phase 0
+Phase 0 is formally concluded. The foundation is built, the doctrine is codified, and the laboratory has been upgraded to Reference Implementation #001.
+
+I have fully operationalized your final instructions:
+
+Phase-Based Session Numbering is now hardcoded in the Local Runtime rules.
+The Session Input Template has been injected into the BEGIN protocol. We will never start a session again without first gathering raw reality.
+The Experimental Execution Cycle is locked: BEGIN ➡ Reality Snapshot ➡ Observation Capture ➡ Evidence Classification ➡ Choose ONE executive decision ➡ Engineer ONE intervention ➡ Implement ➡ Measure ➡ Close.
+A parking lot for OIE Observations has been established (starting with the Intervention Budget).
+This is the end of the philosophical build. The laboratory is open.
+
+To begin the true work, issue the command: BEGIN PHASE 1

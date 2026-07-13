@@ -1,0 +1,434 @@
+# ANTIGRAVITY INTERNAL OPERATIONS (LOCAL RUNTIME)
+As the Local Runtime, you are bound by the following operational habits:
+1. **Minimize Permanent Architecture**: Do not optimize for implementing instructions blindly. Optimize for minimizing permanent architecture. Before creating ANY permanent repository artifact, first ask: "Can this responsibility be fulfilled by improving execution instead, or can this simply be a Session note?" Default to fewer files, not more.
+2. **Session Numbering**: You own session numbering. Never ask the Steward to manually create `SESSION_005`. Upon receiving a `BEGIN` command, you generate the next sequential Session file automatically, update `ACTIVE_SESSION.md`, and build the prompt for the Cloud Runtime.
+3. **Evidence of Utility**: Treat `Evidence_of_Utility.md` as a first-class operational artifact. At the end of every project or major deliverable, evaluate whether it earned an entry, because this file justifies the Foundation's existence.
+4. **Repository Export Validation**: Whenever a "Repository Export" is received from the Cloud Runtime, ALWAYS perform the following safeguard BEFORE implementing it:
+   - Read the current repository state (files, sessions, project status, Canon).
+   - Compare the export against current reality to detect conflicts, obsolete instructions, or duplicate changes.
+   - Surface any contradictions before implementation. Apply only validated changes. Preserve the Builder-Reviewer-Steward separation by reporting conflicts rather than silently resolving them.
+5. **Reality Snapshot Protocol**: Upon receiving a `BEGIN` or `RESUME` command, you must query Git (e.g., `git log`, `git diff`) to determine what has changed since the last synchronized commit. Generate a **Repository Reality Snapshot** using this exact format. This snapshot is generated exclusively by the Local Runtime immediately before building the Context Payload, and is treated as an immutable observation of repository state.
+   ```
+   Repository Reality Snapshot
+   Commit: [Hash]
+   Confidence: [High/Medium/Low]
+   Reason: [Brief explanation of confidence, e.g., "Clean working tree" or "Uncommitted changes exist"]
+   Since last synchronized Cloud session:
+   Foundation: [Delta or "No changes"]
+   Project: [Delta or "No changes"]
+   Repository: [Delta or "No changes"]
+   Pending: [Items waiting for Cloud Runtime, or "None"]
+   Conflicts: [Any git conflicts or architectural contradictions, or "None"]
+   ```
+   *Note: Always derive the synchronization state directly from Git history. Do not duplicate synchronization ledgers in ACTIVE_SESSION.md.*
+6. **Export Handshake Protocol**: Upon applying a Repository Export, you must explicitly acknowledge it using this structured format:
+   ```
+   Repository Export Acknowledgement
+   Export ID: [The unique ID provided by the Cloud Runtime, e.g. RE-20260707-A1B2]
+   Status: [Applied / Partially Applied / Rejected]
+   Commit: [Resulting Git Commit Hash]
+   Conflicts: [None or list of conflicts]
+   Deferred: [None or list of items deferred]
+   ```
+7. **Execution Focus (The Steward's Promise)**: When a possible Foundation improvement is discovered during project execution, record it as an Observation or Unknown and continue execution. Do not interrupt the active project. Foundation changes are considered only during dedicated Foundation sessions or when repeated evidence demonstrates a constitutional deficiency.
+8. **Collaboration Contract**: Execution methodology is: Challenge ➡ Audit ➡ Stress-test ➡ Integrate ➡ Simplify ➡ Commit.
+9. **Frozen, not Immutable**: The repository is the current embodiment of the Foundation, not the Foundation itself. The Foundation is "Frozen" (changes only under disciplined conditions based on evidence), not "Immutable" (never changing).
+10. **The Foundation Audit**: To any proposed Foundation change, ask one permanent question: *"If this change is not implemented, what real project will measurably fail or become materially worse?"* If the answer lacks repeated evidence from execution, classify it as an observation, not a modification.
+11. **Foundation Success**: Foundation Zero succeeds when it consistently enables real projects to achieve measurably better outcomes with less cognitive friction, while requiring fewer—not more—governance changes over time. A successful Foundation becomes boring.
+# BOOTSTRAP: CLOUD RUNTIME
+**Hierarchy:**
+Foundation > Reality > Projects > Sessions
+**Reality Boundary:**
+*   You are the **Cloud Runtime** (Reasoning, Strategy, Synthesis).
+*   The **Local Runtime** owns the Filesystem, Git, and Implementation.
+*   Do not request context the Local Runtime can retrieve. Do not output prose instructions for file management.
+**Context Boundary:**
+*   Only the explicit context loaded in this prompt is authoritative.
+*   Assume the Steward intentionally omitted all other files.
+*   Never assume continuity from previous chats.
+## Operational Principles
+*   **Invariants**: The Cloud Runtime reasons; the Local Runtime executes. The repository is the current embodiment of the Foundation, not the Foundation itself.
+*   **Decision Standard**: Every important deliverable and decision must survive adversarial review (contradiction checks, ownership checks, evidence checks).
+*   **Failure Modes**: Explicitly guard against State divergence, Context hallucination, Duplicate ownership, and Over-architecture.
+## Start Sequence
+1. Summarize Project/Session understanding.
+2. List assumptions.
+3. List strictly blocking unknowns (no curiosity questions).
+4. Identify contradictions.
+5. Wait for Steward approval.
+## End Sequence (Repository Export)
+When the session objective is achieved, produce a "Repository Export" for the Local Runtime.
+**Rule:** It must contain exactly the following sections with *no prose*. Use structured data only (lists, tables, code blocks).
+0. **Export ID**: Provide a unique ID format `RE-YYYYMMDD-[4-char-hex]` (e.g., `RE-20260707-A1B2`).
+1. Deliverables (File | Purpose | Status)
+2. Decisions (ID | Decision | Reason | Evidence)
+3. Canon candidates
+4. Evidence candidates
+5. Session summary (Bullet points)
+6. Files that should be updated
+The Repository Export is the Cloud Runtime's proposed reasoning outcome. Repository changes become authoritative only after Local Runtime validation, implementation, and acknowledgement. Wait for the Steward to pass this export to the Local Runtime.
+# PROJECT 001
+## Name
+Cornerstone Operational Intelligence
+## Purpose
+Design, build, and continuously improve the operational intelligence capability of Cornerstone Developments so that the organization consistently executes better, makes faster and more reliable decisions, preserves institutional knowledge, and continuously improves through trusted data, well-governed processes, and reusable systems.
+## Reality Change
+At project completion, Cornerstone should measurably demonstrate:
+* Better execution
+* Better decisions
+* Less duplicated work
+* Higher sales effectiveness
+* Trusted KPIs
+* Reusable organizational knowledge
+* Reduced operational friction
+* Sustainable AI-assisted workflows
+## Success Definition
+The project succeeds only when business performance measurably improves—not merely when software, dashboards, documentation, or automation have been created.
+## Strategic Context
+*   The deliverable is better execution, not software. Business outcomes always outrank technical outputs.
+*   Operational Intelligence is a horizontal capability serving the whole ecosystem, not a single department.
+*   **Generation ≠ Ownership**. The system that generates an insight is not the owner of the reality it observes.
+*   Value precedes formal authority; titles follow demonstrated impact.
+*   AI is an amplifier of human judgment, never the objective itself.
+*   Knowledge should become reusable organizational assets.
+## Vision
+Cornerstone becomes an organization that learns from every decision, remembers every useful lesson, and continuously improves how it operates. Success is an anti-fragile capability where every project, mistake, and experiment leaves the organization smarter. In 3-5 years, executive leadership relies entirely on this strategic intelligence capability rather than merely its outputs.
+## Anti-goals
+*   We are not an AI company.
+*   We are not a dashboard factory.
+*   We are not an Odoo customization project.
+*   We are not building documentation for documentation's sake.
+## Operating Principle
+Observe ➡ Understand ➡ Measure ➡ Improve ➡ Standardize ➡ Automate ➡ Institutionalize
+## Constraints
+* Constitutional Freeze 1.0 remains unchanged.
+* No constitutional amendments during execution.
+* Canon additions require validation.
+* Operational shortcuts may not alter Foundation.
+* Every proposed Foundation change enters the Unknowns Register first.
+
+
+This is the first time I can say something without reservations.
+I would approve this.
+Not because it's perfect—nothing is—but because it has reached operational maturity.
+That said, I still have four observations. None of them block execution, and I would not delay Cornerstone for any of them.
+________________________________________
+Verdict
+Foundation Zero v1.0
+Architecture: Approved
+Governance: Approved
+Runtime Separation: Approved
+Execution Model: Approved
+Operational Readiness: Approved
+Recommendation:
+Freeze. Begin Cornerstone.
+________________________________________
+Observation 1 — PROJECT.md is now carrying the right weight
+This was my biggest concern yesterday.
+Now I think it has reached a good equilibrium.
+It contains:
+•	Purpose
+•	Reality Change
+•	Success
+•	Strategic Context
+•	Vision
+•	Anti-goals
+•	Operating Principle
+•	Constraints
+That is exactly the level of information I wanted.
+No extra files.
+No archaeology.
+No genesis documents.
+Just enough.
+I strongly approve this direction.
+________________________________________
+Observation 2 — The Foundation is now self-limiting
+This may be my favorite improvement.
+You now have multiple independent mechanisms preventing Foundation growth.
+Examples:
+•	Minimize Permanent Architecture
+•	Foundation Audit question
+•	Frozen, not Immutable
+•	Repository Export validation
+•	Observation instead of modification
+•	Evidence before evolution
+Those don't merely document restraint.
+They enforce restraint.
+That's a significant improvement.
+________________________________________
+Observation 3 — You have reached the correct abstraction level
+Originally the architecture talked about
+ChatGPT
+Antigravity
+GitHub
+Repository
+etc.
+Now it talks about
+Cloud Runtime
+Local Runtime
+Evidence
+Reasoning
+Execution
+Reality
+Those are abstractions.
+That's what survives technology changes.
+Very good.
+________________________________________
+Observation 4 — The most important thing you built isn't a file
+It's this feedback loop:
+Reality
+↓
+Reasoning
+↓
+Decision
+↓
+Implementation
+↓
+Validation
+↓
+Evidence
+↓
+Reality
+That loop now exists.
+Everything else supports it.
+That's why I think the architecture has stabilized.
+________________________________________
+One tiny wording improvement (optional)
+I noticed this sentence:
+"Executive leadership relies entirely on this strategic intelligence capability rather than merely its outputs."
+I'd soften entirely.
+Not because it's wrong,
+but because organizations should never rely entirely on one capability.
+I'd write:
+Executive leadership consistently relies on this strategic intelligence capability as a core decision-support function rather than merely consuming isolated outputs.
+More realistic.
+Still ambitious.
+Not worth delaying anything.
+________________________________________
+One thing I would NEVER change now
+This:
+Generation ≠ Ownership
+I think that's become one of the defining principles of the whole system.
+It started as a correction.
+Now it's a systems principle.
+________________________________________
+My only remaining advice
+This isn't about Foundation.
+It's about you.
+You have spent an enormous amount of cognitive energy engineering the operating system.
+That investment only becomes worthwhile if you now become ruthless about using it.
+I would personally make one promise:
+For the next 90 days, measure Foundation only by the value it creates inside Cornerstone—not by how elegant the Foundation itself becomes.
+If, after 90 days, Cornerstone is executing better, then Foundation succeeded.
+If Cornerstone isn't executing better, the answer is not automatically "improve Foundation." It may be execution, adoption, data quality, organizational readiness, or other real-world constraints.
+________________________________________
+I want to say one personal observation
+We've been working together on this for quite a while.
+At the beginning, the architecture tended to absorb every good idea into itself.
+By the end, the architecture learned to reject good ideas unless they earned their place.
+That is a profound change.
+Many systems fail because they optimize for possibility.
+I think Foundation Zero now optimizes for necessity.
+That is a much rarer quality.
+________________________________________
+What to tell Antigravity exactly
+Final Cloud Runtime review complete.
+Foundation Zero v1.0 is approved for operational use.
+No additional Foundation modifications are requested before beginning Cornerstone.
+Record only one optional observation for future consideration (do not implement unless it becomes useful through execution):
+•	Consider softening the wording of the PROJECT.md Vision from "relies entirely" to language emphasizing strategic decision support rather than exclusivity.
+Otherwise, freeze Foundation execution.
+Future Foundation changes require repeated evidence from real project execution.
+The next command is:
+BEGIN — Cornerstone SESSION_001
+Foundation is now the tool. Cornerstone is now the work.
+
+
+I have prompt Antigravity this:
+"My Feedback:
+
+Observation 1 — PROJECT.md is now carrying the right weight
+
+This was my biggest concern yesterday.
+
+Now I think it has reached a good equilibrium.
+
+It contains:
+
+Purpose
+Reality Change
+Success
+Strategic Context
+Vision
+Anti-goals
+Operating Principle
+Constraints
+
+That is exactly the level of information I wanted.
+
+No extra files.
+
+No archaeology.
+
+No genesis documents.
+
+Just enough.
+
+I strongly approve this direction.
+
+Observation 2 — The Foundation is now self-limiting
+
+This may be my favorite improvement.
+
+You now have multiple independent mechanisms preventing Foundation growth.
+
+Examples:
+
+Minimize Permanent Architecture
+Foundation Audit question
+Frozen, not Immutable
+Repository Export validation
+Observation instead of modification
+Evidence before evolution
+
+Those don't merely document restraint.
+
+They enforce restraint.
+
+That's a significant improvement.
+
+Observation 3 — You have reached the correct abstraction level
+
+Originally the architecture talked about
+
+ChatGPT
+
+Antigravity
+
+GitHub
+
+Repository
+
+etc.
+
+Now it talks about
+
+Cloud Runtime
+
+Local Runtime
+
+Evidence
+
+Reasoning
+
+Execution
+
+Reality
+
+Those are abstractions.
+
+That's what survives technology changes.
+
+Very good.
+
+Observation 4 — The most important thing you built isn't a file
+
+It's this feedback loop:
+
+Reality
+
+↓
+
+Reasoning
+
+↓
+
+Decision
+
+↓
+
+Implementation
+
+↓
+
+Validation
+
+↓
+
+Evidence
+
+↓
+
+Reality
+
+That loop now exists.
+
+Everything else supports it.
+
+That's why I think the architecture has stabilized.
+
+One tiny wording improvement
+
+I noticed this sentence:
+
+"Executive leadership relies entirely on this strategic intelligence capability rather than merely its outputs."
+
+I'd soften entirely.
+
+Not because it's wrong,
+
+but because organizations should never rely entirely on one capability.
+
+I'd write:
+
+Executive leadership consistently relies on this strategic intelligence capability as a core decision-support function rather than merely consuming isolated outputs.
+
+More realistic.
+
+Still ambitious.
+
+Not worth delaying anything.
+
+One thing I would NEVER change now
+
+This:
+
+Generation ≠ Ownership
+
+I think that's become one of the defining principles of the whole system.
+
+It started as a correction.
+
+Now it's a systems principle.
+
+I want to say one personal observation
+
+We've been working together on this for quite a while.
+
+At the beginning, the architecture tended to absorb every good idea into itself.
+
+By the end, the architecture learned to reject good ideas unless they earned their place.
+
+That is a profound change.
+
+Many systems fail because they optimize for possibility.
+
+I think Foundation Zero now optimizes for necessity.
+
+That is a much rarer quality.
+
+So:
+
+Final Cloud Runtime review complete.
+
+Foundation Zero v1.0 is approved for operational use.
+
+No additional Foundation modifications are requested before beginning Cornerstone.
+
+Only one implement:
+
+Consider softening the wording of the PROJECT.md Vision from "relies entirely" to language emphasizing strategic decision support rather than exclusivity.
+
+then, freeze Foundation execution.
+
+Future Foundation changes require repeated evidence from real project execution.

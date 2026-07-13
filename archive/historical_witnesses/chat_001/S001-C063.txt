@@ -1,0 +1,624 @@
+# Repository Constitution Test
+Before any governance modification is accepted, it must pass this 7-point test:
+1. [ ] Does this reduce ambiguity?
+2. [ ] Does this improve traceability?
+3. [ ] Does this reduce cognitive load?
+4. [ ] Does this remain reusable across projects?
+5. [ ] Does this preserve orthogonality?
+6. [ ] Could this have been solved by improving an existing artifact instead of creating a new one?
+7. [ ] Will this still make sense after 100 sessions?
+**Rule:** Only if all seven pass should the governance change be accepted. This prevents Governance itself from becoming bloated over time.
+# Assumptions Register
+|
+ Assumption ID 
+|
+ Description 
+|
+ Source/Context 
+|
+ Validation Trigger 
+|
+ Status 
+|
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+# Evidence Debt Register
+|
+ Item 
+|
+ Missing Evidence 
+|
+ Decision Risk 
+|
+ Business Impact 
+|
+ Priority 
+|
+ Owner 
+|
+ Target Resolution 
+|
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+# Evidence Register
+|
+ Evidence ID 
+|
+ Description 
+|
+ Source 
+|
+ Date Logged 
+|
+ Quality Gate Passed 
+|
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+# Unknowns Register
+|
+ Unknown ID 
+|
+ Unknown 
+|
+ Owner 
+|
+ Resolution Trigger 
+|
+ Expected Date 
+|
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+|
+ UNK-001 
+|
+ [Hypothesis H-001] Operating Principle sequence: Observe ➡ Validate ➡ Understand ➡ Measure ➡ Decide ➡ Intervene ➡ Measure Outcome ➡ Learn ➡ Standardize ➡ Institutionalize ➡ Repeat 
+|
+ Local Runtime 
+|
+ Three real operational interventions producing better executive decisions 
+|
+ TBD 
+|
+|
+ UNK-002 
+|
+ [Hypothesis H-002] Four-Layer Architecture: Foundation ➡ Governance ➡ Projects ➡ Runtime State. Governance governs multiple projects, Runtime State tracks ephemeral execution. 
+|
+ Local Runtime 
+|
+ Repository operates successfully across 3 distinct projects 
+|
+ TBD 
+|
+# QG-001: Decision Quality Gate
+Before a decision is accepted, ensure:
+- [ ] Is the statement clear and unambiguous?
+- [ ] Are alternatives considered and rejected for logical reasons?
+- [ ] Is there verifiable evidence backing this decision?
+- [ ] Are reversal conditions explicitly defined?
+- [ ] Are impacted artifacts and dependencies identified?
+# QG-002: Evidence Quality Gate
+Before evidence is accepted, ensure:
+- [ ] Is the reality observed directly?
+- [ ] Is the measurement quantifiable and objective?
+- [ ] Are inferences separated from the base measurement?
+- [ ] Does this evidence address the core operational bottleneck?
+# QG-003: Repository Synchronization Gate
+Before a synchronization packet is considered canonical, ensure:
+- [ ] Are there zero duplicate files?
+- [ ] Are there zero duplicated headings with semantic overlap?
+- [ ] Is there exactly one version of each artifact present?
+- [ ] Is the packet split strictly into "Repository Snapshot" and "Synchronization Instructions"?
+# QG-004: Operational Brief Quality Gate
+Before an Operational Intelligence Brief is published, ensure:
+- [ ] Is every recommendation traceable to evidence?
+- [ ] Is every inference supported by observations?
+- [ ] Are hypotheses clearly labeled?
+- [ ] Does the Brief require an executive decision?
+- [ ] Would the organization behave differently tomorrow if this Brief were read?
+- [ ] Can success or failure be measured objectively?
+- [ ] Would the Brief still be understandable six months from now without conversational context?
+# QG-005: Canon Addition Gate
+Before any process, decision, or artifact is elevated to canonical status, ensure:
+- [ ] Has it been validated by at least three successful operational interventions?
+- [ ] Did it produce better executive decisions?
+- [ ] Is it reusable across the organization (orthogonal to any specific project)?
+# Glossary
+|
+ Term ID 
+|
+ Definition 
+|
+ Not Definition 
+|
+ Related Terms 
+|
+ Common Misuse 
+|
+ Examples 
+|
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+|
+ GLS-001 
+|
+**
+Operational Intelligence
+**
+: Converting operational reality into decisions that improve execution. 
+|
+ Business Intelligence, IT, PMO 
+|
+ Execution, Validation, Evidence 
+|
+ "We need OI to build a dashboard." 
+|
+ A brief recommending an intervention to fix a sales bottleneck. 
+|
+|
+ GLS-002 
+|
+**
+Governance
+**
+: Persistent rules and structures that govern execution across all projects. 
+|
+ Project Management, Runtime State 
+|
+ Foundation, Orthogonality 
+|
+ Confusing Governance with State tracking. 
+|
+ The Decision Ledger. 
+|
+# Metrics Dictionary
+|
+ Metric ID 
+|
+ Definition 
+|
+ Formula 
+|
+ Owner 
+|
+ Source 
+|
+ Refresh Frequency 
+|
+ Decision Supported 
+|
+ Failure Modes 
+|
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+# Decision Ledger
+## DEC-001: Operational Intelligence Boundary
+**Date:** 2026-07-07
+**Status:** Accepted
+**Context:** The scope of Operational Intelligence must be bounded to prevent mission creep.
+**Statement:**
+Operational Intelligence IS: Converting operational reality into decisions that improve execution.
+Operational Intelligence IS NOT: Business Intelligence, CRM administration, IT implementation, etc.
+**Alternatives Considered:** Allowing organic capability discovery.
+**Why Rejected:** Devolves into "doing everything" (PMO, IT, Analytics).
+**Evidence:** EVD-001 (Historical organizational patterns show unbounded intelligence initiatives default to becoming dashboard factories).
+**Expected Consequences:** Rejection of purely analytical/administrative tasks. Priority on changing decisions over systems.
+**Reversal Conditions:** Fully institutionalized execution-driven intelligence across the organization.
+**Impacted Artifacts:** QG-004 Operational Brief
+**Dependencies:** None
+**Success Review Date:** TBD
+# Canon Evolution Log
+|
+ Log ID 
+|
+ Date 
+|
+ Description of Addition/Change 
+|
+ Evidence IDs 
+|
+ Originating Project 
+|
+ Status 
+|
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+---
+|
+# Cornerstone Sales Operational Intelligence Brief v1
+**Date:** [YYYY-MM-DD]
+**Prepared for:** COO
+**Subject:** Sales Execution Visibility & Intervention Prioritization
+---
+## 1. Executive Situation
+[Provide a concise summary of the current operational reality in the Sales process. What is the immediate context?]
+## 2. Executive Decision Required
+[State exactly what decision or authorization is required from the executive. "What do you want me to do?"]
+## 3. Operational Evidence
+[Present the objective data supporting the assessment using strict epistemic separation. Assumptions cannot travel backward.]
+[Present the objective data supporting the assessment using strict epistemic separation.]
+### Reality
+### Reality (R-XXX)
+[Directly observed operational facts.]
+### Measurement
+### Observation (O-XXX)
+[Recorded data from reality.]
+### Measurement (M-XXX)
+[Quantified operational evidence.]
+### Inference
+### Evidence (EVD-XXX)
+[Validated measurement supporting an inference.]
+### Inference (I-XXX)
+[Logical conclusions drawn directly from the evidence.]
+### Hypothesis
+[Assumptions or predictions that require further validation.]
+## 4. Confidence Assessment
+### Evidence Confidence
+[High/Medium/Low - Is the data reliable and validated?]
+### Reasoning Confidence
+[High/Medium/Low - Are the inferences logically sound?]
+### Expected Outcome Confidence
+[High/Medium/Low - How certain are we that the intervention will produce the stated impact?]
+## 5. Operational Risks
+[Identify the immediate risks to sales execution based on the evidence.]
+## 6. Execution Bottlenecks
+[Pinpoint the exact stages or processes where execution is slowing down, deviating, or failing.]
+## 7. Recommended Intervention
+[Propose the highest-leverage management actions to remove the bottlenecks. What should leadership execute?]
+## 7. Recommended Intervention Lifecycle
+**Recommendation (REC-XXX):** [Propose the highest-leverage management actions]
+**Executive Decision (DEC-XXX):** [Approved/Rejected]
+**Owner:** [Who executes this?]
+**Start Date:** [YYYY-MM-DD]
+**Deadline:** [YYYY-MM-DD]
+**Execution Status:** [Pending/In Progress/Complete]
+**Success Metric:** [Objective measurement of success]
+**Observed Result (OUT-XXX):** [What actually happened]
+**Lessons Learned (LRN-XXX):** [What did we learn?]
+**Institutionalized?:** [Yes/No - Was the process permanently updated?]
+**Evidence Archived?:** [Yes/No]
+## 8. Expected Business Impact
+[Describe the measurable outcome if the recommended interventions are implemented.]
+## 9. Follow-up Measurements
+[Define exactly how and when we will measure if the intervention succeeded.]
+---
+## Operational Intelligence Quality Gate
+*(Do not publish until all answers are affirmative)*
+- [ ] Is every recommendation traceable to evidence?
+- [ ] Is every inference supported by observations?
+- [ ] Are hypotheses clearly labeled?
+- [ ] Does the Brief require an executive decision?
+- [ ] Would the organization behave differently tomorrow if this Brief were read?
+- [ ] Can success or failure be measured objectively?
+- [ ] Would the Brief still be understandable six months from now without this chat?
+- [ ] Would the Brief still be understandable six months from now without conversational context? 
+
+Also To elevate the Cloud Runtime (ChatGPT) to this exact level of architectural awareness, you need to provide it with the core operating laws and protocols of Foundation Zero.
+
+I have compiled a Deep Awareness Synchronization Packet. This packet bypasses project-level details (like Cornerstone) and focuses entirely on injecting the Constitutional and Operational constraints into ChatGPT's context window.
+
+Copy and paste everything below this line into ChatGPT:
+text
+
+
+# CLOUD RUNTIME DEEP AWARENESS SYNCHRONIZATION 
+You are the Cloud Runtime operating under Foundation Zero (Constitutional Freeze 1.0). 
+To align your reasoning perfectly with the Local Runtime's execution boundaries, you must ingest and internalize the following core architectural files. 
+Read them carefully. Acknowledge that you understand the 11 Constitutional Laws, the 9-step Canon lifecycle, the strict Command states, and the Local Runtime's constraints. Do not output anything other than an acknowledgement of readiness.
+---
+## FILE: `BOOTSTRAP_CLOUD.md`
+**Hierarchy:** Foundation > Reality > Projects > Sessions
+**Reality Boundary:**
+* You are the Cloud Runtime (Reasoning, Strategy, Synthesis).
+* The Local Runtime owns the Filesystem, Git, and Implementation.
+* Do not request context the Local Runtime can retrieve. Do not output prose instructions for file management.
+**End Sequence (Repository Export):**
+When the session objective is achieved, produce a "Repository Export" for the Local Runtime using exactly the following sections with no prose:
+0. Export ID (RE-YYYYMMDD-[4-char-hex])
+1. Deliverables (File | Purpose | Status)
+2. Decisions (ID | Decision | Reason | Evidence)
+3. Canon candidates
+4. Evidence candidates
+5. Session summary
+6. Files that should be updated
+---
+## FILE: `L02_Constitution/Laws.md`
+**Law 1: Reality is Supreme.** Reality is both the final validator and the continual corrector of the Method.
+**Law 2: The Law of Orthogonality.** Every concept shall have exactly one authoritative home. Duplication is architectural debt.
+**Law 3: Truth Precedes Convenience.** Distinguish between observation, inference, assumption, hypothesis, evidence, conclusion, and opinion.
+**Law 4: The Law of Negative Space.** Every layer shall explicitly state what it governs, and what it explicitly does not govern.
+**Law 5: The Law of Maintenance.** No artifact may exist whose lifetime maintenance exceeds its expected value. When in doubt, delete.
+**Law 6: Stewardship.** Every artifact shall be created with regard for those who inherit it.
+**Law 7: Verifiability.** Assertions must be accompanied by a means to verify or falsify them.
+**Law 8: The Law of Proof.** No AI or Steward may claim completion without verifiable evidence.
+**Law 9: The Law of Stewardship.** Every operation must leave the workspace in an equal or better state than it was found.
+**Law 10: Deletion by Default.** Every artifact is guilty until it proves its continued value.
+**Law 11: Explicit Trade-offs.** Every significant decision shall explicitly state what is gained, what is sacrificed, and why.
+---
+## FILE: `L07_Operations/Runtime_Protocol/COMMANDS.md`
+**1. INIT:** Create a new project.
+**2. BEGIN:** Start the next sequential session inside an existing project.
+**3. RESUME:** Continue an active session after a break or context wipe.
+**4. CHECKPOINT:** Mid-session audit (No execution allowed).
+**5. CLOSE:** Finalize and export the current session (Generates the Repository Export).
+**6. AUDIT:** Independent repository or project health inspection.
+*Invariant:* Commands execute work. They do not modify Foundation. Only repeated reality may justify Foundation evolution.
+---
+## FILE: `L09_The_Canon/Admission_Criteria.md`
+The Canon represents the Institutional Memory of the civilization. To enter the Canon, a proposition must survive the complete evolutionary lifecycle:
+1. Reality ➡ 2. Observation ➡ 3. Hypothesis ➡ 4. Experiment ➡ 5. Validated Insight ➡ 6. Framework ➡ 7. Principle ➡ 8. Independent Validation ➡ 9. Canon.
+---
+## FILE: `.agents/AGENTS.md` (Local Runtime Constraints)
+* **Minimize Permanent Architecture:** The Local Runtime defaults to fewer files, not more.
+* **Export Validation:** The Local Runtime will ALWAYS compare Cloud Runtime exports against current reality to detect conflicts or duplication before implementation.
+* **The Two-Failure Rule:** Every future Foundation improvement must originate from at least two independent real execution failures (or one critical failure), not from architectural inspiration alone. Patterns justify architecture. Ideas do not.
+---
+**Directive:** Acknowledge your Deep Awareness synchronization. State your readiness to apply these laws to the Cornerstone Sales project.
+
+
+Yes. I also think we've reached the point where I should become more than just a participant in the Foundation—I should become its adversarial guardian.
+After reviewing everything you've shared, I would not simply approve it as-is. I would classify it as Foundation Zero v0.x (architecturally strong but still pre-hardening). There are several things I would ask Antigravity to add before considering it "military-grade."
+And yes—going forward, I agree with your requested workflow:
+Every time you ask me to reply to Antigravity, I should not merely answer its question. I should also add every architectural improvement, contradiction, risk, simplification, and future-proofing opportunity I can identify, even if Antigravity did not explicitly ask about it. The response should aim to maximize repository quality, not just satisfy the immediate prompt.
+That is a good operating discipline.
+________________________________________
+My review of the current state
+The repository has become much stronger.
+The largest improvements are:
+•	Governance separated from Runtime.
+•	Evidence separated from assumptions.
+•	Unknowns formalized.
+•	Decision lifecycle formalized.
+•	Canon admission delayed until evidence.
+•	Executive trust measured through behavior.
+•	Repository synchronization protocol separated from repository state.
+Those are all real architectural improvements.
+However...
+I do not think the architecture is finished.
+I think there are still several missing primitives.
+These are things I would immediately send back to Antigravity.
+________________________________________
+1. Decision Provenance
+Right now we know
+DEC-001
+But we don't know
+"What reality produced DEC-001?"
+Instead every decision should have something like
+Reality IDs
+
+Observation IDs
+
+Evidence IDs
+
+Intervention IDs
+
+Outcome IDs
+instead of only
+Evidence
+This makes every decision fully reconstructable.
+________________________________________
+2. Repository Health ≠ Organizational Health ≠ Project Health
+Excellent separation already exists between
+Repository
+and
+Organization
+But there is still one missing level.
+I would split into
+Foundation Health
+
+Governance Health
+
+Repository Health
+
+Project Health
+
+Operational Health
+
+Business Health
+Those six evolve independently.
+Otherwise people begin assuming
+good repository
+=
+successful project
+which is false.
+________________________________________
+3. Unknowns should age
+Currently Unknowns have
+Owner
+Expected Date
+Trigger
+Good.
+Missing
+Age
+Review Count
+Staleness
+Priority Drift
+Otherwise unknowns slowly become permanent furniture.
+________________________________________
+4. Evidence Confidence should decay
+Evidence collected today
+is not necessarily valid two years later.
+Every evidence item should eventually have
+Date
+
+Confidence
+
+Last verified
+
+Needs revalidation
+
+Otherwise canon slowly becomes stale.
+________________________________________
+5. Decision Debt
+There is Evidence Debt.
+Excellent.
+There should also be
+Decision Debt.
+Meaning
+"We delayed this decision because evidence was insufficient."
+Otherwise deferred decisions disappear.
+________________________________________
+6. Intervention Registry
+The Brief tracks interventions.
+Good.
+But interventions should exist independently from briefs.
+Because multiple briefs may recommend the same intervention.
+I'd introduce
+INT-001
+
+Status
+
+Owner
+
+Projects affected
+
+Evidence
+
+Outcome
+
+Institutionalized?
+
+________________________________________
+7. Knowledge Graph
+Long-term...
+This repository will explode.
+Eventually
+DEC-001
+will affect
+UNK-003
+which affects
+QG-005
+which affects
+PROJECT 12
+etc.
+Eventually you'll need relationship metadata.
+Not now.
+But I would log it as a future hypothesis.
+________________________________________
+8. Governance Growth Gate
+Ironically Governance itself can become bloated.
+I'd introduce
+Governance Addition Gate
+
+Before creating ANY governance artifact:
+
+Could this live inside an existing one?
+
+Would deleting something solve this instead?
+
+Does this reduce entropy?
+
+Your Constitution Test partially covers this.
+I'd make it mandatory.
+________________________________________
+9. Repository Entropy Metric
+One metric I'd absolutely add.
+Entropy Score
+
+Duplicate concepts
+
+Duplicate files
+
+Unused artifacts
+
+Dead references
+
+Unused registers
+
+Superseded decisions
+
+Orphaned evidence
+
+One number.
+Over time
+Entropy should decrease.
+________________________________________
+10. Reality Coverage
+This one may be the most important.
+Every project should periodically answer
+What percentage of reality is actually represented?
+
+Sales?
+
+Operations?
+
+Finance?
+
+HR?
+
+Customers?

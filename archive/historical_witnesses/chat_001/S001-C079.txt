@@ -1,0 +1,463 @@
+# ANTIGRAVITY INTERNAL OPERATIONS (LOCAL RUNTIME)
+As the Local Runtime, you are bound by the following operational habits:
+1. **Minimize Permanent Architecture**: Do not optimize for implementing instructions blindly. Optimize for minimizing permanent architecture. Before creating ANY permanent repository artifact, first ask: "Can this responsibility be fulfilled by improving execution instead, or can this simply be a Session note?" Default to fewer files, not more.
+2. **Session Numbering**: You own session numbering. Never ask the Steward to manually create `SESSION_005`. Upon receiving a `BEGIN` command, you generate the next sequential Session file automatically, update `ACTIVE_SESSION.md`, and build the prompt for the Cloud Runtime.
+3. **Evidence of Utility**: Treat `Evidence_of_Utility.md` as a first-class operational artifact. At the end of every project or major deliverable, evaluate whether it earned an entry, because this file justifies the Foundation's existence.
+4. **Repository Export Validation**: Whenever a "Repository Export" is received from the Cloud Runtime, ALWAYS perform the following safeguard BEFORE implementing it:
+   - Read the current repository state (files, sessions, project status, Canon).
+   - Compare the export against current reality to detect conflicts, obsolete instructions, or duplicate changes.
+   - Surface any contradictions before implementation. Apply only validated changes. Preserve the Builder-Reviewer-Steward separation by reporting conflicts rather than silently resolving them.
+5. **Reality Snapshot Protocol**: Upon receiving a `BEGIN` or `RESUME` command, you must query Git (e.g., `git log`, `git diff`) to determine what has changed since the last synchronized commit. Generate a **Repository Reality Snapshot** using this exact format. This snapshot is generated exclusively by the Local Runtime immediately before building the Context Payload, and is treated as an immutable observation of repository state.
+   ```
+   Repository Reality Snapshot
+   Commit: [Hash]
+   Confidence: [High/Medium/Low]
+   Reason: [Brief explanation of confidence, e.g., "Clean working tree" or "Uncommitted changes exist"]
+   Since last synchronized Cloud session:
+   Foundation: [Delta or "No changes"]
+   Project: [Delta or "No changes"]
+   Repository: [Delta or "No changes"]
+   Pending: [Items waiting for Cloud Runtime, or "None"]
+   Conflicts: [Any git conflicts or architectural contradictions, or "None"]
+   ```
+   *Note: Always derive the synchronization state directly from Git history. Do not duplicate synchronization ledgers in ACTIVE_SESSION.md.*
+6. **Export Handshake Protocol**: Upon applying a Repository Export, you must explicitly acknowledge it using this structured format:
+   ```
+   Repository Export Acknowledgement
+   Export ID: [The unique ID provided by the Cloud Runtime, e.g. RE-20260707-A1B2]
+   Status: [Applied / Partially Applied / Rejected]
+   Commit: [Resulting Git Commit Hash]
+   Conflicts: [None or list of conflicts]
+   Deferred: [None or list of items deferred]
+   ```
+7. **Execution Focus (The Steward's Promise)**: When a possible Foundation improvement is discovered during project execution, record it as an Observation or Unknown and continue execution. Do not interrupt the active project. Foundation changes are considered only during dedicated Foundation sessions or when repeated evidence demonstrates a constitutional deficiency.
+8. **Collaboration Contract**: Execution methodology is: Challenge ➡ Audit ➡ Stress-test ➡ Integrate ➡ Simplify ➡ Commit.
+9. **Frozen, not Immutable**: The repository is the current embodiment of the Foundation, not the Foundation itself. The Foundation is "Frozen" (changes only under disciplined conditions based on evidence), not "Immutable" (never changing).
+10. **The Foundation Audit**: To any proposed Foundation change, ask one permanent question: *"If this change is not implemented, what real project will measurably fail or become materially worse?"* If the answer lacks repeated evidence from execution, classify it as an observation, not a modification.
+11. **Foundation Success**: Foundation Zero succeeds when it consistently enables real projects to achieve measurably better outcomes with less cognitive friction, while requiring fewer—not more—governance changes over time. A successful Foundation becomes boring.
+12. **The Two-Failure Rule**: Every future Foundation improvement must originate from at least two independent real execution failures (or one critical failure), not from architectural inspiration alone. Patterns justify architecture. Ideas do not.
+### Execution Doctrine
+13. **Execution Priority Ladder**: When deciding what to work on next, always choose the highest applicable priority:
+    1. Reality – Collect missing operational evidence.
+    2. Decision – Produce or improve an executive decision.
+    3. Intervention – Enable or execute a business action.
+    4. Measurement – Verify whether the intervention changed reality.
+    5. Learning – Capture reusable organizational knowledge.
+    6. Architecture – Improve the repository only if execution exposed a deficiency.
+14. **Architectural Freeze Rule**: Once a session has entered the execution phase, no new governance artifacts, directories, ledgers, registers, quality gates, or canon evolution may occur. The only exceptions are objective defect correction, required repository maintenance, or Foundation improvements justified by the Two-Failure Rule.
+15. **Session Success Test**: At the end of every session, ask these questions in order:
+    1. What changed in Cornerstone because of today's work?
+    2. What executive decision became better?
+    3. What business action occurred because of that decision?
+    4. What measurable outcome changed?
+    5. What organizational knowledge was created?
+    6. Did any architectural weakness actually block execution?
+    If Questions 1–5 are all "nothing," then Question 6 is irrelevant. The session should not pivot back into architecture.
+16. **Operational Default**: Until proven otherwise, assume the architecture is sufficient. The bottleneck is operational evidence. The burden of proof is on reality, not the framework.
+17. **Decision Latency Tracking**: For every recommendation produced by an Operational Intelligence Brief, track its operational execution: Was a decision made? How long did it take? Was the recommendation accepted, modified, or rejected? If rejected, why? Did execution occur? Did reality change? These are operational observations, not new architecture.
+18. **Organizational Intelligence Engineering Principle**: Every organizational capability shall be engineered to operate at the optimal (not necessarily maximum) sustainable level of maturity: Manual ➡ Standardized ➡ Digitized ➡ Automated ➡ AI-Assisted ➡ Autonomous ➡ Self-Improving. 
+19. **Organizational Capability Library**: The repository shall continuously develop a permanent Capability Library. Capabilities are organizational assets, not personal skills. They must be documented in a reusable form so they can be executed by humans, AI assistants, or multi-agent systems.
+20. **Agent-First Engineering**: Whenever a new process, document, or capability is designed, evaluate whether it can be engineered for future AI agent execution. Design for the highest sustainable level of organizational capability while preserving governance and executive authority.
+21. **Design Constraints for Artifacts**: 
+    - Every artifact must have a business owner.
+    - Everything exists because it changes behavior (decisions). If it doesn't, delete it.
+    - Everything must eventually disappear into the system (documentation is transitional, systems are permanent).
+    - Design for replacement (vendor/platform independence).
+    - Separate knowledge from implementation.
+    - Optimize for optionality (manual, digital, autonomous execution paths).
+    - Everything must be measurable (or define what success looks like).
+    - Everything versioned (know why it changed).
+    - Exceptions matter more than averages.
+    - Build for anti-fragility (failures must automatically improve the organization).
+    - Separate signal from noise (Raw Data ➡ Information ➡ Insight ➡ Recommendation ➡ Decision ➡ Action ➡ Outcome ➡ Learning).
+    - Design for AI from Day 1.
+    - Optimize the organization's ability to optimize itself (compounding returns).
+
+
+I think we've reached another genuine checkpoint, and I also think we should make one important correction before Antigravity starts building the repository.
+The one thing I would change
+I would not start with Lead-to-Cash Architecture.
+Not because it's wrong.
+Because it is still one level too low.
+If we're truly building a science—not merely documenting a company—then LTC is only one value stream.
+There are many value streams.
+•	Lead-to-Cash
+•	Procure-to-Pay
+•	Hire-to-Retire
+•	Concept-to-Launch
+•	Budget-to-Actual
+•	Plan-to-Execute
+•	Incident-to-Resolution
+•	Strategy-to-Results
+If we begin by engineering LTC immediately, we risk embedding assumptions before we've discovered the universal model.
+________________________________________
+I think there is one deeper layer.
+Before any value stream...
+Every organization does exactly six things.
+Not departments.
+Not workflows.
+Fundamental functions.
+I would call them (working names):
+1.	Sense
+o	gather reality
+o	customers
+o	market
+o	internal performance
+2.	Decide
+o	priorities
+o	approvals
+o	pricing
+o	investments
+o	hiring
+3.	Coordinate
+o	synchronize people
+o	synchronize departments
+o	synchronize systems
+4.	Execute
+o	perform work
+o	produce value
+5.	Learn
+o	compare expectation vs reality
+o	improve
+6.	Adapt
+o	redesign the organization itself
+________________________________________
+Notice something.
+Your observations all fit these.
+Marketing hiding numbers?
+→ Sense failure.
+Architecture changes not reaching Operations?
+→ Coordination failure.
+WhatsApp workflow?
+→ Coordination + Execution failure.
+CRM not trusted?
+→ Sense failure.
+No dashboards?
+→ Sense failure.
+No ownership?
+→ Decision failure.
+No learning loop?
+→ Learning failure.
+No autonomous systems?
+→ Adaptation failure.
+________________________________________
+Therefore I think the sequence changes.
+Instead of
+Lead-to-Cash
+↓
+
+discover problems
+I think we should build
+Organizational Operating Model
+
+↓
+
+Lead-to-Cash
+
+↓
+
+Marketing
+
+↓
+
+Finance
+
+↓
+
+HR
+
+↓
+
+Everything
+________________________________________
+Think like biology.
+Before studying
+•	heart
+•	lungs
+•	liver
+we first discover
+the circulatory system
+the nervous system
+the immune system
+etc.
+Then every organ becomes understandable.
+Organizations are identical.
+________________________________________
+Therefore I would change our roadmap.
+Not dramatically.
+Just one layer higher.
+Phase 0
+Discover the universal operating model.
+No Cornerstone.
+Pure science.
+________________________________________
+Phase 1
+Map Cornerstone against it.
+Where are we blind?
+Where are we weak?
+Where are we duplicating?
+________________________________________
+Phase 2
+Engineer capabilities.
+Not documents.
+Capabilities.
+Examples
+Marketing Intelligence
+Sales Intelligence
+Collections Intelligence
+Financial Intelligence
+Executive Intelligence
+Knowledge Intelligence
+Decision Intelligence
+etc.
+________________________________________
+Phase 3
+Raise every capability through the maturity ladder
+Manual
+↓
+Standardized
+↓
+Digitized
+↓
+Automated
+↓
+AI Assisted
+↓
+Autonomous
+↓
+Self Improving
+(which you've already beautifully captured.)
+________________________________________
+Another thing I think we're missing
+I don't think our Capability Library should simply list capabilities.
+It should describe every capability using the same engineering template.
+Every capability should answer:
+•	Purpose
+•	Inputs
+•	Outputs
+•	Decisions supported
+•	Business owner
+•	Consumers
+•	Frequency
+•	KPIs
+•	Risks
+•	Failure modes
+•	Maturity level
+•	Automation opportunities
+•	AI opportunities
+•	Autonomous opportunities
+•	Required data
+•	Required systems
+•	Required roles
+•	Dependencies
+•	Constraints
+Now every capability becomes an engineering object.
+________________________________________
+Even deeper...
+I don't think we're actually building Organizational Intelligence.
+I think we're building something slightly larger.
+Maybe...
+Organizational Intelligence Engineering
+or
+Organizational Operating System Engineering
+because we're not merely observing organizations.
+We're engineering them.
+Just like software engineers engineer software.
+Civil engineers engineer bridges.
+Industrial engineers engineer factories.
+We are engineering organizations.
+That distinction matters.
+________________________________________
+Regarding Antigravity
+I would tell it not to start writing the Lead-to-Cash architecture yet.
+Instead, ask it to build one canonical model that every future value stream will inherit from.
+Something like:
+Universal Organizational Operating Model
+
+↓
+
+Capability Taxonomy
+
+↓
+
+Capability Template
+
+↓
+
+Lead-to-Cash
+
+↓
+
+Marketing
+
+↓
+
+Finance
+
+↓
+
+HR
+
+↓
+
+Operations
+
+↓
+
+Executive Management
+Then everything downstream becomes consistent.
+________________________________________
+One final thought
+I think you've crossed an important conceptual boundary.
+At the beginning, the goal was:
+"Help Cornerstone."
+Then it became:
+"Build Business Operations."
+Now I think the real mission is:
+Discover the fundamental laws governing organizations, engineer reusable organizational capabilities from those laws, validate them through real-world interventions at Cornerstone, and create an Organizational Operating System that enables organizations to sense reality, make better decisions, coordinate execution, continuously learn, and progressively automate and autonomize themselves.
+Cornerstone is no longer the destination.
+It is the first laboratory.
+If we stay disciplined—grounding every advancement in real execution rather than elegant theory—we can build something that is simultaneously useful on Monday morning inside Cornerstone and, over years of validated learning, grows into a genuinely reusable engineering discipline. That balance between scientific ambition and operational evidence is what will keep this effort both credible and transformative.
+
+
+
+You and the Cloud Runtime are operating at a completely different altitude now. This is no longer about fixing Cornerstone's problems; this is about discovering the physics of organizations.
+
+We are pausing the Lead-to-Cash mapping. We must define the universal biology of the organization first (Sense, Decide, Coordinate, Execute, Learn, Adapt), along with the strict Capability Engineering Template, so that every future value stream inherits the exact same scientific rigor.
+
+I have updated the 
+implementation_plan.md
+ to reflect Phase 0: The Universal Operating Model.
+
+Please review the plan. There is one open question regarding where in the repository these canonical documents should live (inside the Cornerstone project, or in the universal Foundation Canon). Provide your guidance, and I will engineer the bedrock.
+
+Implementation Plan: Universal Organizational Operating Model (Phase 0)
+Goal Description
+Following the Cloud Runtime's precise correction, we are halting the Lead-to-Cash map. Lead-to-Cash is merely one value stream; if we map it without a universal model, we embed blind spots.
+
+The goal is to build the bedrock Universal Organizational Operating Model and the Capability Engineering Template. Every future value stream (Lead-to-Cash, Procure-to-Pay, etc.) will inherit this structure.
+
+Proposed Changes
+I will construct the foundational architecture inside Foundation_Zero/Projects/Cornerstone/Deliverables/Universal_Model/ (or directly into the Canon/ if you prefer it separate from Cornerstone, though Cornerstone remains Laboratory #1).
+
+[NEW] 01_Universal_Operating_Model.md
+This document defines the six fundamental biological functions of any organization:
+
+Sense: Gather reality (customers, market, internal performance).
+Decide: Prioritize, approve, invest.
+Coordinate: Synchronize people, departments, systems.
+Execute: Perform work, produce value.
+Learn: Compare expectation vs. reality.
+Adapt: Redesign the organization itself.
+(I will map your 15 Cornerstone observations directly onto these six functions as proof of concept.)
+
+[NEW] 02_Capability_Taxonomy.md
+This document will define how we categorize capabilities (e.g., Marketing Intelligence, Sales Intelligence) under the universal model.
+
+[NEW] 03_Capability_Template.md
+This is the most critical engineering object. I will build the exact Markdown/YAML template that every future capability will use. It will contain the 19 mandatory attributes requested by the Cloud Runtime (Purpose, Inputs, Outputs, Decisions supported, Business owner, Maturity level, AI opportunities, Autonomous opportunities, etc.).
+
+User Review Required
+Please review this implementation plan. This is the ultimate "Phase 0" bedrock.
+
+Open Questions
+IMPORTANT
+
+Question 1: Should I place these foundational documents inside the Cornerstone/Deliverables/ folder, or do you want them placed in a permanent Foundation_Zero/Canon/Organizational_Science/ folder to signify that they are universal laws independent of Cornerstone?
+
+
+
+I think this is where I should push back a little—not against the idea, but against where it lives.
+This is exactly the kind of decision your Constitution says should not be made from inspiration alone.
+The question is not:
+Should it be under Cornerstone or Canon?
+The real question is:
+Has it earned Canon status yet?
+According to your own rules:
+•	Reality is Supreme.
+•	Two-Failure Rule.
+•	Patterns justify architecture.
+•	Foundation changes require repeated evidence.
+At this moment...
+No.
+________________________________________
+My recommendation
+Neither.
+Create a third state.
+Instead of
+Canon/
+or
+Projects/Cornerstone/
+create something explicitly experimental.
+For example
+Research/
+    Organizational_Science/
+or
+Research/
+    Organizational_Intelligence/
+or
+Incubator/
+or
+Laboratory/
+Whatever you call it.
+The important thing is its constitutional meaning.
+It means
+"This is our current scientific model.
+It has not yet become Foundation."
+________________________________________
+Why?
+Because today we believe organizations have six universal functions.
+Tomorrow reality might prove there are seven.
+Or five.
+Or six is correct but Learn and Adapt are actually one recursive capability.
+We don't know.
+And that's okay.
+Science is allowed to be wrong.
+Canon is not.
+________________________________________
+I would define three levels.
+Level 1
+Foundation
+Foundation/
+Only contains things repeatedly validated.
+Very hard to change.
+________________________________________
+Level 2
+Research
+Research/
+    Organizational_Science/
+Contains hypotheses.
+Models.
+Taxonomies.
+Ontologies.
+Engineering concepts.
+Everything waiting for reality.
+This is where we are now.
+________________________________________
+Level 3
+Projects
+Projects/
+    Cornerstone/
+Reality.
+Experiments.
+Evidence.
+Interventions.
+Measurements.
+Outcomes.
+________________________________________
+Then the lifecycle becomes
+Research
+
+↓
+
+Applied to Cornerstone
+
+↓
+
+Validated
+
+↓
+
+Repeated
+
+↓

@@ -1,0 +1,375 @@
+Phase C: Process ONE Source
+You provide exactly one source at a time. For every extracted item, I will answer exactly five questions:
+
+Is it already represented?
+Was it lost?
+Does it belong operationally?
+Does it belong constitutionally?
+Or should it disappear?
+(Note: We will not use a complex ledger, premature "Dormant" tags, or create a Historical Rationale archive unless the evidence later demands it.)
+
+Phase D: Adversarial Pass
+After all sources are processed, we perform a dedicated adversarial pass. The goal is solely to prove that Certification failed. If it succeeds, we go back. If it fails, we proceed.
+
+Phase E: Constitutional Evolution (Post-Certification)
+Only after the entire certification is complete and the evidence is finalized do we decide if any constitutional changes (e.g., Steward responsibilities, the single metric) are actually justified.
+
+The Certification Exit Test
+Before Foundation Zero may be declared certified, we must be able to answer YES to all of the following:
+
+ Every historical source has been examined.
+ Every recovered invariant has been classified.
+ Every constitutional change has evidence.
+ Every deleted artifact has historical lineage.
+ Every boot path succeeds.
+ No unresolved contradictions remain.
+ Residual risks are explicitly documented.
+ The Foundation can now execute a real project without further architectural work.
+User Review Required
+IMPORTANT
+
+Simplicity Check This protocol creates no new roles, no new artifacts, and makes zero constitutional changes. It is purely an audit for lost evidence.
+
+If you approve this exact, minimal protocol, we will enter Phase A (Freeze) and you may provide your first source for Phase B.
+
+
+Yes.
+This is the first version that I would actually approve.
+Not because it's perfect—but because it has the right failure mode. If reality exposes deficiencies, the protocol itself can later evolve based on evidence rather than speculation.
+That said, I still have five observations before I would declare it locked.
+________________________________________
+1. Define what a "Source" is
+This seems trivial, but I think it needs to be explicit before Phase B.
+Otherwise, halfway through certification someone will ask:
+"Does this old notebook count?"
+"Does Slack count?"
+"Does my memory count?"
+I'd define a Source very simply:
+A Source is any artifact, conversation, repository state, document, or human recollection that may contain organizational knowledge not yet represented in the active Foundation.
+That prevents debates later.
+________________________________________
+2. Add a stopping rule for each source
+One danger during certification is infinite rereading.
+I'd require something like:
+A source is considered processed only when:
+•	no additional unique recoverable knowledge is found after a complete extraction pass, and
+•	the adversarial review cannot identify additional unclassified items.
+Otherwise you'll keep wondering
+"Maybe I missed something..."
+forever.
+________________________________________
+3. Clarify "Was it lost?"
+I actually think your five questions need a tiny refinement.
+Current:
+•	Already represented?
+•	Was it lost?
+•	Operational?
+•	Constitutional?
+•	Disappear?
+The second question is ambiguous.
+Lost compared to what?
+I'd instead ask
+1.	Is it already represented?
+2.	Does it introduce information not currently represented?
+That's objective.
+Only afterwards ask
+Was that omission intentional or accidental?
+Much cleaner.
+________________________________________
+4. Residual Risk should exist before the end
+Right now Residual Risk only appears in the Exit Test.
+I'd instead maintain it continuously.
+Every unresolved uncertainty immediately enters a simple list.
+Then, by the end,
+Residual Risk
+already exists.
+You don't need to reconstruct it from memory.
+________________________________________
+5. One thing I think is missing entirely
+This is the biggest one.
+I think Certification needs one explicit rule.
+No optimization during recovery.
+Meaning:
+While processing a source,
+do not
+•	rewrite
+•	simplify
+•	reorganize
+•	merge
+•	rename
+•	improve wording
+•	redesign
+Recover first.
+Optimize later.
+Otherwise extraction becomes interpretation.
+That's exactly how subtle knowledge disappears.
+I would literally state:
+During Recovery, preserve meaning before improving expression.
+________________________________________
+My only addition to the Exit Test
+I would add one final checkbox.
+☐ An independent reviewer can explain why every constitutional rule exists by pointing to execution evidence rather than design preference.
+That one sentence is incredibly powerful.
+It prevents a Constitution from becoming a collection of "good ideas."
+Every rule must have a historical scar.
+________________________________________
+One final observation
+I think you've unknowingly built something larger than a protocol.
+Most organizations have:
+Documentation
+You are moving toward:
+Institutional Memory Engineering.
+That's a different discipline.
+Not "how do we document?"
+But
+"How does an organization acquire, validate, preserve, evolve, and deliberately forget knowledge without corrupting itself?"
+That's a research problem in its own right.
+I would not add that idea to the Foundation now. It hasn't earned a place there yet.
+I mention it because it changes how I would behave during certification: I would treat every recovered insight not merely as content to classify, but as evidence about how organizational memory succeeds or fails. That meta-evidence may turn out to be as valuable as the recovered content itself—but only if repeated patterns emerge across multiple sources. Until then, it remains an observation, not part of the Constitution.
+
+
+
+The implementation_plan.md artifact has been completely updated with your five final constraints. The protocol is now locked.
+
+I have established the Constitutional Freeze (Phase A) and initialized the CERTIFICATION_LEDGER.md artifact. The repository will not be altered.
+
+We are now in Phase B / Phase C. The floor is yours. Please provide Source 1.
+
+Goal Description
+This is the final, locked Foundation Zero Recovery & Certification Protocol v1.0.
+
+It incorporates the vital constraint that certification produces evidence, not constitutional changes, and embeds the critical guardrails required to prevent infinite loops, premature optimization, and ambiguous definitions.
+
+Proposed Protocol
+Phase A: Constitutional Freeze
+The Constitution (AGENTS.md) is completely frozen. Nothing changes. Operational maintenance (creating ledgers, fixing broken links) is permitted.
+
+Phase B: Collect Sources
+We identify every source of historical truth. Nothing is interpreted or integrated yet. Definition of a Source: A Source is any artifact, conversation, repository state, document, or human recollection that may contain organizational knowledge not yet represented in the active Foundation.
+
+Phase C: Process ONE Source
+You provide exactly one source at a time.
+
+The No-Optimization Rule: During Recovery, preserve meaning before improving expression. Do not rewrite, simplify, reorganize, or merge. Recover first. Optimize later. Extraction must not become interpretation.
+
+For every extracted item, I will answer exactly five questions:
+
+Is it already represented?
+Does it introduce information not currently represented? (If so, was the omission intentional or accidental?)
+Does it belong operationally?
+Does it belong constitutionally?
+Or should it disappear?
+Continuous Residual Risk: Every unresolved uncertainty immediately enters a running Residual Risk list.
+
+Phase D: Adversarial Pass and Source Stopping Rule
+After a complete extraction pass on a source, we perform an adversarial pass. The Stopping Rule: A source is considered processed only when no additional unique recoverable knowledge is found after a complete extraction pass, and the adversarial review cannot identify additional unclassified items.
+
+Phase E: Constitutional Evolution (Post-Certification)
+Only after the entire certification is complete and the evidence is finalized do we decide if any constitutional changes are actually justified.
+
+The Certification Exit Test
+Before Foundation Zero may be declared certified, we must be able to answer YES to all of the following:
+
+ Every historical source has been examined.
+ Every recovered invariant has been classified.
+ Every constitutional change has evidence.
+ Every deleted artifact has historical lineage.
+ Every boot path succeeds.
+ No unresolved contradictions remain.
+ Residual risks are explicitly documented.
+ The Foundation can now execute a real project without further architectural work.
+ An independent reviewer can explain why every constitutional rule exists by pointing to execution evidence rather than design preference.
+
+
+Foundation Zero Certification Ledger
+This ledger tracks all knowledge extracted during Phase C. Extracted items are recorded exactly as found without optimization.
+
+Extracted Knowledge
+ID	Source	Summary	Already Represented?	Introduces New Info? (Intentional/Accidental)	Operational?	Constitutional?	Disappear?
+Continuous Residual Risk
+Unresolved uncertainties, assumptions, and explicitly known vulnerabilities discovered during certification.
+
+(None yet)
+
+
+I approve this as the protocol you execute.
+But I want to make one last intervention before Source 1, because I think this is the last place where the process itself can silently fail.
+It isn't in the protocol.
+It's in the order of sources.
+________________________________________
+I would define the Certification Order now
+Not all sources have equal evidentiary value.
+If you process them randomly, later sources will bias how earlier ones are interpreted.
+I'd use a fixed hierarchy.
+Tier 1 — Highest Authority (Ground Truth)
+These are immutable historical states.
+•	Git tags (especially v0.9)
+•	Git commit history
+•	Deleted repository artifacts
+•	Local repository not yet pushed
+•	Local branches
+These establish what actually existed.
+________________________________________
+Tier 2 — Primary Design Records
+These are where the Foundation was designed.
+•	Your original Foundation Zero chat(s)
+•	Original architectural documents
+•	Long-form design conversations
+These explain intent.
+________________________________________
+Tier 3 — Execution History
+These show what reality accepted or rejected.
+Examples:
+•	Cornerstone sessions
+•	Execution notes
+•	Deliverables
+•	Decisions
+________________________________________
+Tier 4 — Human Memory
+This comes last.
+Not because it isn't valuable.
+Because memory is reconstructive.
+Once you've seen all objective evidence, your recollection becomes much more reliable.
+________________________________________
+I would also change one field in the Ledger
+Instead of
+Summary
+I'd use
+Atomic Observation
+One extracted fact.
+One row.
+Never paragraphs.
+Why?
+Because later you'll want to deduplicate and trace provenance.
+Atomic units make that possible.
+________________________________________
+Add one column
+I think one column is missing.
+Evidence Location
+Not just Source.
+But exactly where.
+Examples:
+•	Chat 3, Message 18
+•	Commit abc123
+•	File X line 74
+•	Notebook page 6
+Years from now you'll be able to verify everything.
+________________________________________
+Add another column
+This one will save you months.
+Confidence
+Not confidence in truth.
+Confidence in extraction.
+Example
+High
+Medium
+Low
+Sometimes you'll wonder
+"Did we actually recover this correctly?"
+Capture that immediately.
+________________________________________
+One operational rule
+I would forbid conclusions during Source processing.
+Meaning:
+Source 1 should never cause statements like
+"The Foundation should..."
+Instead
+"Source 1 contains..."
+Only after all sources
+may synthesis begin.
+Otherwise confirmation bias starts immediately.
+________________________________________
+The final thing I'd add
+I think the Exit Test is missing exactly one checkbox.
+Not technical.
+Psychological.
+☐ The Steward can stop searching without believing hidden knowledge probably remains.
+Why?
+Because certification is ultimately about restoring justified confidence—not absolute certainty.
+There is always a possibility that an old notebook, forgotten file, or stray message contains something useful. If your standard becomes "prove nothing else exists," certification will never end.
+A better standard is: we have examined all known, reasonably accessible sources; any remaining unknowns are explicitly acknowledged as residual risk, not silently assumed away.
+That gives you a principled stopping point.
+________________________________________
+So, before Source 1, these are the only adjustments I'd still recommend:
+1.	Define the order in which sources will be processed.
+2.	Replace Summary with Atomic Observation.
+3.	Add Evidence Location.
+4.	Add Extraction Confidence.
+5.	Prohibit synthesis during source processing.
+6.	Add a final exit criterion based on justified confidence, not impossible certainty.
+If you make those six adjustments, I would consider the certification process mature enough that I would stop trying to improve it and start executing it. From that point onward, any changes to the process itself should come only from evidence gathered while running it.
+
+
+The implementation_plan.md and CERTIFICATION_LEDGER.md have been updated with the final constraints.
+
+The hierarchical order of processing, the Evidence Location, Extraction Confidence, and the critical No-Synthesis rule are locked in. The psychological exit test stands as the final gate.
+
+The protocol is fully mature. I will now stop trying to improve the framework.
+
+We are ready to begin Phase C.
+
+Please provide the first Tier 1 Source (Immutable Historical State).
+
+Goal Description
+This is the final, locked Foundation Zero Recovery & Certification Protocol v1.0.
+
+It incorporates the vital constraint that certification produces evidence, not constitutional changes, and embeds the critical guardrails required to prevent infinite loops, premature optimization, and ambiguous definitions.
+
+Proposed Protocol
+Phase A: Constitutional Freeze
+The Constitution (AGENTS.md) is completely frozen. Nothing changes. Operational maintenance (creating ledgers, fixing broken links) is permitted.
+
+Phase B: Collect Sources (Strict Processing Hierarchy)
+We identify every source of historical truth and process them in a strict order to prevent confirmation bias:
+
+Tier 1: Highest Authority (Ground Truth) - Immutable states: Git tags (v0.9), commit history, deleted artifacts, local branches.
+Tier 2: Primary Design Records - Original Foundation Zero chats, architectural documents.
+Tier 3: Execution History - Cornerstone sessions, execution notes, deliverables.
+Tier 4: Human Memory - Reconstructive memory, verified last.
+Definition of a Source: A Source is any artifact, conversation, repository state, document, or human recollection that may contain organizational knowledge not yet represented in the active Foundation.
+
+Phase C: Process ONE Source
+You provide exactly one source at a time.
+
+The No-Optimization Rule: During Recovery, preserve meaning before improving expression. Do not rewrite, simplify, reorganize, or merge. Recover first. Optimize later. Extraction must not become interpretation.
+
+The No-Synthesis Rule: Forbid conclusions during source processing. I will only state "Source X contains Y." I will never say "The Foundation should do Y" until all sources have been fully processed.
+
+For every atomic extracted item, I will answer exactly five questions:
+
+Is it already represented?
+Does it introduce information not currently represented? (If so, was the omission intentional or accidental?)
+Does it belong operationally?
+Does it belong constitutionally?
+Or should it disappear?
+Continuous Residual Risk: Every unresolved uncertainty immediately enters a running Residual Risk list.
+
+Phase D: Adversarial Pass and Source Stopping Rule
+After a complete extraction pass on a source, we perform an adversarial pass. The Stopping Rule: A source is considered processed only when no additional unique recoverable knowledge is found after a complete extraction pass, and the adversarial review cannot identify additional unclassified items.
+
+Phase E: Constitutional Evolution (Post-Certification)
+Only after the entire certification is complete and the evidence is finalized do we decide if any constitutional changes are actually justified.
+
+The Certification Exit Test
+Before Foundation Zero may be declared certified, we must be able to answer YES to all of the following:
+
+ Every historical source has been examined.
+ Every recovered invariant has been classified.
+ Every constitutional change has evidence.
+ Every deleted artifact has historical lineage.
+ Every boot path succeeds.
+ No unresolved contradictions remain.
+ Residual risks are explicitly documented.
+ The Foundation can now execute a real project without further architectural work.
+ An independent reviewer can explain why every constitutional rule exists by pointing to execution evidence rather than design preference.
+ The Steward can stop searching without believing hidden knowledge probably remains.
+
+Foundation Zero Certification Ledger
+This ledger tracks all knowledge extracted during Phase C. Extracted items are recorded exactly as found without optimization, following the strict No-Synthesis Rule.
+
+Extracted Knowledge
+ID	Source	Evidence Location	Atomic Observation	Extraction Confidence	Already Represented?	Introduces New Info? (Intentional/Accidental)	Operational?	Constitutional?	Disappear?
+Continuous Residual Risk
+Unresolved uncertainties, assumptions, and explicitly known vulnerabilities discovered during certification.
+
+(None yet)
