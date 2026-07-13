@@ -19,6 +19,19 @@ Every artifact produced must satisfy these 7 questions before advancing:
 7. Is it **maintainable**?
 If any answer is "No", the artifact does not advance.
 
+## Expected Deliverables (The Genesis Registers)
+Genesis must produce the following structured artifacts as it progresses through the 11 layers:
+
+1. **Source of Truth Register** (The Current Authority Map): What is authoritative and how it is validated.
+   `| Asset | Authority Type | Authority | Historical Witnesses | Verification Method | Acceptance Test |`
+2. **Decision Register**: The memory of why the business behaves this way.
+   `| Decision | Owner | Current Rationale | Evidence | Revisit When | Status |`
+3. **Implementation Ledger**: Engineering obligations tied directly to observable business outcomes.
+   `| Obligation | Destination Module | Business Outcome | Reality Status | Priority |`
+4. **Unknown Register**: Validated uncertainty, strictly categorized by root cause.
+   `| Unknown | Root Cause | Next Action |`
+5. **Business Vocabulary**: The ubiquitous language that prevents project drift.
+
 ## Execution Sequence
 
 ### Phase 1: Construction of the Canonical Model
