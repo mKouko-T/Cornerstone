@@ -7,7 +7,7 @@
 To convert operational reality into better business decisions across pricing, lead qualification, and inventory integrity.
 
 ## Current Phase
-Initialization & Discovery
+Reality Capture
 
 ## Repository Map
 Cornerstone/
@@ -22,7 +22,7 @@ Cornerstone imports **Foundation Zero Lite v1.0** (Constitution, Doctrine, and m
 1. **Initialize only the minimum repository structure required by Foundation Zero Lite. Every additional permanent artifact must justify its existence through business implementation evidence.**
 2. Initialize it as a Git repository and link it to the remote GitHub repository `mKouko-T/Cornerstone`.
 3. Import the minimal Foundation Zero Lite core into the new `Cornerstone/docs/` folder from the local Foundation Zero compiler path.
-4. Identify the first high-leverage business decision to improve (e.g., Pricing Validation).
+4. Conduct Reality Capture: Inventory every recurring operational decision (Sales, Pricing, Inventory, Finance, Management) as raw evidence before making any assessment of priority.
 
 ## Active Constraints
 - No changes to Foundation Zero are permitted.
