@@ -9,6 +9,7 @@ Build the **Canonical Real Estate Development Operating Model (CREDOM)** from fi
 We are currently in the Genesis phase. We do not automate today's mess. We model the bedrock first, then use reality to validate it.
 
 ### 1. Operations & Methodology
+* **[Cornerstone Runtime Boot Protocol (CRBP)](CRBP.md)** — The mandatory initialization sequence for all AI runtimes.
 * **[The Handoff](docs/CORNERSTONE_GENESIS_HANDOFF.md)** — The rules of engagement bridging Foundation Zero to Cornerstone.
 * **[Genesis Methodology](docs/Genesis_Methodology.md)** — The 11-Layer Ontological Engineering sequence and required artifact schemas.
 * **[Foundation Zero Lite](BOOTSTRAP.md)** — The governing principles of evidence and immutable architecture.
