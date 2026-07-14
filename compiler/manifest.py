@@ -14,7 +14,6 @@ class ManifestGenerator:
         # 1. Build the base manifest structure
         manifest = {
             "schema": "v1",
-            "generated_at": datetime.now(timezone.utc).isoformat(),
             "compiler": {
                 "name": ir.compiler_identity.name,
                 "version": ir.compiler_identity.version,
@@ -39,7 +38,7 @@ class ManifestGenerator:
         boot_id_payload = (
             ir.compiler_identity.version + 
             ir.compiler_identity.remote_commit_sha + 
-            ir.manifest_hash + 
+            manifest_json + 
             ir.repository_identity.commit_sha
         )
         ir.boot_id = hashlib.sha256(boot_id_payload.encode('utf-8')).hexdigest()

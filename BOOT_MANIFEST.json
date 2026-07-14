@@ -1,10 +1,10 @@
 {
   "certification": {
-    "boot_id": "f3ecce106ec3e4535f3d9ffa76ddf05f32c9f5a97bd777e862417ab517eb2895",
+    "boot_id": "e0c611d23f9bafa582ecabff76dfc8e4abf8917c92774e538950383e4001c69f",
     "compiler_identity": "Foundation Zero Lite v1.0",
     "compiler_signature": "UNSIGNED",
-    "manifest_hash": "122683abab26d1cb24109846cd4d86c59c31f5bc71bed5fdb936ccd5fa60c14f",
-    "repository_commit": "b47d57ff1085c2fb848d2ae541fb00eb47fbd187"
+    "manifest_hash": "74ac6afdbd487f617532ac6be188f6569e54b6fdbdd5e464c617a73ad67b3173",
+    "repository_commit": "d1406133fb06d0d9b80a381a9df2a1e002abdc63"
   },
   "compiler": {
     "guarantees": [
@@ -29,7 +29,6 @@
     "BOOTSTRAP.md",
     "Foundation_Zero/BOOT_CONTEXT.md (remote)"
   ],
-  "generated_at": "2026-07-14T09:49:44.310109+00:00",
   "provenance": {
     "BOOTSTRAP.md": "6c419c6660725321ab2e9f7fb77bf4d326215d3af76d6ea024c4e2f79bc5d9a1",
     "docs/Canonical_Model.md": "01cc0f84fd0ba7be9947af0c62b2eb27b125454e6c1983c83d3b4e82131d7106",
@@ -39,7 +38,7 @@
   },
   "repository": {
     "branch": "main",
-    "commit_sha": "b47d57ff1085c2fb848d2ae541fb00eb47fbd187",
+    "commit_sha": "d1406133fb06d0d9b80a381a9df2a1e002abdc63",
     "name": "Cornerstone"
   },
   "schema": "v1"

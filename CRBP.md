@@ -65,7 +65,7 @@ Declare **BOOT COMPLETE** only after all of the following are true:
 * [x] `BOOT_PACKAGE.md` successfully loaded.
 * [x] `BOOT_MANIFEST.json` successfully loaded.
 * [x] `BOOT_ID` match verified.
-* [x] Cryptographic/Hash Certification flags verified as PASS.
+* [x] Cryptographic Certification block verified as valid.
 * [x] Current execution phase identified.
 * [x] Current task board understood.
 
@@ -85,7 +85,6 @@ Remote Commit: [From Manifest]
 Package Identity
 ----------------
 BOOT_ID: [Verified ID]
-Generated: [From Manifest]
 
 Execution
 ---------
