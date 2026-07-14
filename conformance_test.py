@@ -102,11 +102,11 @@ def test_7_pinned_mode(tmp_path):
     repo = setup_mock_repo(tmp_path / "repo_pinned")
     env = os.environ.copy()
     env["COMPILER_MODE"] = "pinned"
-    env["PINNED_COMMIT_SHA"] = "7cad96659f3d1c39f0b3913452e71ac3a325e006" # From previous push
+    env["PINNED_COMMIT_SHA"] = "141b01e7f98a6a4022a9e259dc3f447dbd9f3b25" # From previous push
     
     subprocess.run(["python", str(COMPILER_MAIN), "--root", "."], cwd=str(repo), env=env, check=True)
     man = get_manifest(repo)
-    assert man['compiler']['remote_commit_sha'] == "7cad96659f3d1c39f0b3913452e71ac3a325e006"
+    assert man['compiler']['remote_commit_sha'] == "141b01e7f98a6a4022a9e259dc3f447dbd9f3b25"
 
 if __name__ == "__main__":
     pytest.main(["-v", __file__])

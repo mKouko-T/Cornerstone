@@ -1,9 +1,9 @@
 {
   "certification": {
-    "boot_id": "93ec6b06ea634b11cca6a7cb1648bdab5ed08f1aa84acff5bf0017695a3f3e48",
+    "boot_id": "49aba8809f2230d38c262ad1e9993529b48be77dce6ab9c4fae135afef0431fa",
     "compiler_identity": "Foundation Zero Lite v1.0",
     "compiler_signature": "UNSIGNED",
-    "manifest_hash": "93ec6b06ea634b11cca6a7cb1648bdab5ed08f1aa84acff5bf0017695a3f3e48",
+    "manifest_hash": "49aba8809f2230d38c262ad1e9993529b48be77dce6ab9c4fae135afef0431fa",
     "repository_commit": "DIRTY"
   },
   "compiler": {
@@ -21,7 +21,7 @@
     ],
     "hash_sha256": "df695d26c6baa4a01b49e2aa2972da92f97ce6ef5b661ab9c3b1c575fb17bcf1",
     "name": "Foundation Zero Lite",
-    "remote_commit_sha": "7cad96659f3d1c39f0b3913452e71ac3a325e006",
+    "remote_commit_sha": "141b01e7f98a6a4022a9e259dc3f447dbd9f3b25",
     "source_repository": "mKouko-T/Foundation_Zero",
     "version": "v1.0"
   },
