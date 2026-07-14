@@ -22,7 +22,8 @@ class ManifestGenerator:
         
         # 1. Build the base manifest structure
         manifest = {
-            "schema": "v1",
+            "schema_version": "1.0",
+            "spec_version": "1.0",
             "compiler": {
                 "name": ir.compiler_identity.name,
                 "version": ir.compiler_identity.version,

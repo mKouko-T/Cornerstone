@@ -48,3 +48,5 @@ class CanonicalIR:
     execution_context: ExecutionContext = field(default_factory=ExecutionContext)
     knowledge_state: KnowledgeState = field(default_factory=KnowledgeState)
     provenance: Provenance = field(default_factory=Provenance)
+    raw_files: Dict[str, str] = field(default_factory=dict)
+    pipeline_graph: dict = field(default_factory=dict)
