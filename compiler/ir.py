@@ -9,6 +9,8 @@ class CompilerIdentity:
     hash_sha256: str = ""
     source_repository: str = "mKouko-T/Foundation_Zero"
     certification: str = "PENDING"
+    signature: str = "UNSIGNED"
+    guarantees: List[str] = field(default_factory=list)
     content: str = ""
 
 @dataclass

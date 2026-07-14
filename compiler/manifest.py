@@ -19,7 +19,8 @@ class ManifestGenerator:
                 "name": ir.compiler_identity.name,
                 "version": ir.compiler_identity.version,
                 "remote_commit_sha": ir.compiler_identity.remote_commit_sha,
-                "source_repository": ir.compiler_identity.source_repository
+                "source_repository": ir.compiler_identity.source_repository,
+                "guarantees": ir.compiler_identity.guarantees
             },
             "repository": {
                 "name": ir.repository_identity.name,
@@ -33,7 +34,8 @@ class ManifestGenerator:
                 "repository_verified": "PASS",
                 "project_loaded": "PASS",
                 "ambiguity_check": "PASS",
-                "hashes_verified": "PASS"
+                "hashes_verified": "PASS",
+                "signature": ir.compiler_identity.signature
             }
         }
         

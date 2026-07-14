@@ -16,6 +16,17 @@ class Validator:
         self._calculate_hashes(ir)
         self._resolve_dependencies(ir)
         
+        # Enforce Capability Declarations
+        ir.compiler_identity.guarantees = [
+            "Canonical ordering",
+            "Missing-file detection",
+            "Hash verification",
+            "Repository verification",
+            "Compiler verification",
+            "Deterministic ordering",
+            "Dependency resolution"
+        ]
+        
         # If we reach here, validation passes.
         ir.compiler_identity.certification = "PASS"
 
