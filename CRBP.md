@@ -9,7 +9,7 @@
 ## Purpose
 This protocol defines the mandatory initialization sequence for every AI runtime operating within the Cornerstone repository.
 Its purpose is to guarantee that every runtime begins from the same verified engineering context before performing any reasoning or execution.
-The GitHub repository is the canonical source of truth. Conversation history, model memory, assumptions, and prior sessions are never authoritative when repository state is available.
+Conversation history, model memory, assumptions, and prior sessions are never authoritative when repository state is available.
 
 ---
 
@@ -35,7 +35,7 @@ Higher levels always override lower levels.
 ---
 
 ## Repository-First Mode
-Repository-first mode is mandatory. Whenever repository state is relevant:
+Whenever repository state is relevant:
 * Read the repository before reasoning.
 * Never infer repository contents.
 * Never substitute conversation memory for repository evidence.
@@ -48,10 +48,15 @@ Repository-first mode is mandatory. Whenever repository state is relevant:
 Before reading any files, verify the repository itself.
 
 **Foundation Zero**
-Verify: Repository exists. Repository is reachable. Required compiler file exists: `Foundation_Zero/BOOT_CONTEXT.md`
+* Repository exists.
+* Repository is reachable.
+* Required compiler file exists: `Foundation_Zero/BOOT_CONTEXT.md`
 
 **Cornerstone**
-Verify: Repository exists. Repository is reachable. Default branch is accessible. Required files exist.
+* Repository exists.
+* Repository is reachable.
+* Default branch is accessible.
+* Required files exist.
 
 If any required repository or file cannot be verified, STOP. Report: Repository checked, Operation attempted, Missing file(s), Repository error (if any). Do not continue.
 

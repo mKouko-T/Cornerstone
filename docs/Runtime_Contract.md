@@ -47,6 +47,6 @@ Never fabricate repository contents. Never continue with partial compiler state.
 
 ## 5. Continuous Verification
 Verification is not limited to boot. It is the execution heartbeat:
-`EXECUTE -> VERIFY -> REPORT -> EXECUTE -> VERIFY`
+`EXECUTE -> VERIFY -> REPORT -> CORRECT (if needed) -> VERIFY -> CONTINUE`
 
 Every action must be verified against repository state and compiler rules before the next action is taken.
