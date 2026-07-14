@@ -1,0 +1,38 @@
+{
+  "boot_id": "2422aaca9b1c260ad6666709bf36346a5867ee8b0f9773f020dbca3a65f4c9ba",
+  "certification": {
+    "ambiguity_check": "PASS",
+    "compiler_loaded": "PASS",
+    "hashes_verified": "PASS",
+    "project_loaded": "PASS",
+    "repository_verified": "PASS"
+  },
+  "compiler": {
+    "name": "Foundation Zero Lite",
+    "remote_commit_sha": "556ce9dca4272dc6491b4f29653571261b924d68",
+    "source_repository": "mKouko-T/Foundation_Zero",
+    "version": "v1.0"
+  },
+  "dependencies": [
+    "docs/Runtime_Contract.md",
+    "docs/Canonical_Model.md",
+    "docs/Genesis_Methodology.md",
+    "task.md",
+    "BOOTSTRAP.md",
+    "Foundation_Zero/BOOT_CONTEXT.md (remote)"
+  ],
+  "generated_at": "2026-07-14T09:46:11.953822+00:00",
+  "provenance": {
+    "BOOTSTRAP.md": "6c419c6660725321ab2e9f7fb77bf4d326215d3af76d6ea024c4e2f79bc5d9a1",
+    "docs/Canonical_Model.md": "01cc0f84fd0ba7be9947af0c62b2eb27b125454e6c1983c83d3b4e82131d7106",
+    "docs/Genesis_Methodology.md": "ec4e145263e11cfe367fee2ca302ce29a69e41a332acc1df0c03f9c9e3c245c3",
+    "docs/Runtime_Contract.md": "302c127483e93a5bfbd4bd7fd8ea022b38bc2efcc509b39f081b572e9c4209c7",
+    "task.md": "a88d536d272d3086506ffa51e85668539b4bf43d06f963d6ddec1b22347f8342"
+  },
+  "repository": {
+    "branch": "main",
+    "commit_sha": "d2f766a96bcb7140e1aeacc2110e5128af7d2b25",
+    "name": "Cornerstone"
+  },
+  "schema": "v1"
+}
