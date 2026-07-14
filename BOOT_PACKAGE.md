@@ -1,5 +1,5 @@
 # BOOT_PACKAGE
-**BOOT_ID:** `dedd6cd9322d88385555615854aebd0fb62a9f33452cdabcd7bef0f6ecfa26eb`
+**BOOT_ID:** `f3ecce106ec3e4535f3d9ffa76ddf05f32c9f5a97bd777e862417ab517eb2895`
 **Compiler:** Foundation Zero Lite v1.0
 **Repository:** Cornerstone (main)
 

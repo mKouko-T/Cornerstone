@@ -36,10 +36,10 @@ Read the machine-readable source of truth:
 
 Verify the following:
 1. **Schema Check**: Ensure the manifest schema is supported (e.g., `v1`).
-2. **Boot Identity Match**: Compare the `BOOT_ID` from `BOOT_PACKAGE.md` against the `boot_id` in the JSON manifest. They must match exactly.
-3. **Certification Flags**: Inspect the `certification` block. Every flag (e.g., `compiler_loaded`, `hashes_verified`) must equal `PASS`.
+2. **Boot Identity Match**: Compare the `BOOT_ID` from `BOOT_PACKAGE.md` against the `boot_id` inside the `certification` block of the JSON manifest. They must match exactly.
+3. **Cryptographic Integrity**: Verify that the `certification` block explicitly declares the `compiler_identity`, `repository_commit`, and `manifest_hash`.
 
-If the IDs do not match, or if any certification flag fails, STOP. Do not continue. The compiled package is tainted.
+If the IDs do not match, or if the certification block is invalid, STOP. Do not continue. The compiled package is tainted.
 
 ---
 
@@ -96,7 +96,7 @@ Verification
 ------------
 Manifest Verified: PASS
 ID Match: PASS
-Certification Flags: PASS
+Certification Valid: PASS
 ```
 
 Then begin autonomous execution as governed by the `Runtime_Contract.md`.
