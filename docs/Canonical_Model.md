@@ -41,3 +41,25 @@ The fundamental entities that exist universally before any specific business dom
 ---
 
 *All elements above have passed the Permanent Quality Gate: They are ontologically necessary, empirically falsifiable, economically justified, operationally useful, implementable, testable, and maintainable.*
+
+---
+
+## Layer 2 — Domain Ontology
+The specialization of the Universal Ontology to the Real Estate Development domain. These entities inherit the properties of their Layer 1 parents.
+
+- **Customer** (*Actor*): An entity that seeks to acquire rights to an Asset (Unit).
+- **Developer** (*Actor*): The entity that creates, owns, and delivers the Asset.
+- **Broker** (*Actor*): An intermediary entity that facilitates Agreements between Developer and Customer.
+- **Project** (*Asset*): A logically bounded development endeavor containing multiple lower-level Assets.
+- **Unit** (*Asset*): The atomic, transactable physical or logical space within a Project.
+- **Reservation** (*Agreement*): A temporary, conditional agreement locking a Unit to a Customer in exchange for an initial Obligation (e.g., holding fee).
+- **Contract/SPA** (*Agreement*): A permanent, legally binding agreement transferring rights to a Unit in exchange for the fulfillment of Financial Obligations.
+- **Payment Plan** (*Obligation*): A structured sequence of financial transfers required from the Customer.
+- **Delivery** (*Obligation*): The requirement for the Developer to transfer the completed Unit to the Customer.
+- **Lead/Inquiry** (*Event*): The initial Observation of a Customer's intent to acquire an Asset.
+- **Booking** (*Transaction*): The Event that establishes a Reservation and locks the Unit.
+- **Collection** (*Transaction*): The Event where a financial Obligation is partially or fully settled.
+
+---
+
+*All elements above have passed the Permanent Quality Gate.*

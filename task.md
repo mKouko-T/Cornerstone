@@ -2,7 +2,7 @@
 
 - [x] 1. Layer 0: First Principles
 - [x] 2. Layer 1: Universal Ontology
-- [ ] 3. Layer 2: Domain Ontology
+- [x] 3. Layer 2: Domain Ontology
 - [ ] 4. Layer 3: Business Invariants
 - [ ] 5. Layer 4: Economic Engine
 - [ ] 6. Layer 5: Decisions
