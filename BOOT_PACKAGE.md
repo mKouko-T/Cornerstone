@@ -1,5 +1,5 @@
 # BOOT_PACKAGE
-**BOOT_ID:** `e0c611d23f9bafa582ecabff76dfc8e4abf8917c92774e538950383e4001c69f`
+**BOOT_ID:** `93ec6b06ea634b11cca6a7cb1648bdab5ed08f1aa84acff5bf0017695a3f3e48`
 **Compiler:** Foundation Zero Lite v1.0
 **Repository:** Cornerstone (main)
 
@@ -491,5 +491,5 @@ Once the Implementation Ledger is derived and validated, the genesis process is 
 =========================
 ## INSTRUCTION TO RUNTIME
 1. Verify the `BOOT_ID` in this package matches the `boot_id` in `BOOT_MANIFEST.json`.
-2. Verify the Certification flags in `BOOT_MANIFEST.json` are PASS.
+2. Verify the Cryptographic Certification block in `BOOT_MANIFEST.json` is valid.
 3. If verified, declare **BOOT COMPLETE** and proceed autonomously.

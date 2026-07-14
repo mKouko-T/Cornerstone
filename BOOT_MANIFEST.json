@@ -1,10 +1,10 @@
 {
   "certification": {
-    "boot_id": "e0c611d23f9bafa582ecabff76dfc8e4abf8917c92774e538950383e4001c69f",
+    "boot_id": "93ec6b06ea634b11cca6a7cb1648bdab5ed08f1aa84acff5bf0017695a3f3e48",
     "compiler_identity": "Foundation Zero Lite v1.0",
     "compiler_signature": "UNSIGNED",
-    "manifest_hash": "74ac6afdbd487f617532ac6be188f6569e54b6fdbdd5e464c617a73ad67b3173",
-    "repository_commit": "d1406133fb06d0d9b80a381a9df2a1e002abdc63"
+    "manifest_hash": "93ec6b06ea634b11cca6a7cb1648bdab5ed08f1aa84acff5bf0017695a3f3e48",
+    "repository_commit": "DIRTY"
   },
   "compiler": {
     "guarantees": [
@@ -14,31 +14,37 @@
       "Repository verification",
       "Compiler verification",
       "Deterministic ordering",
-      "Dependency resolution"
+      "Dependency resolution",
+      "Unicode NFC Normalization",
+      "UTF-8 BOM Stripping",
+      "LF Line Ending Normalization"
     ],
+    "hash_sha256": "df695d26c6baa4a01b49e2aa2972da92f97ce6ef5b661ab9c3b1c575fb17bcf1",
     "name": "Foundation Zero Lite",
-    "remote_commit_sha": "556ce9dca4272dc6491b4f29653571261b924d68",
+    "remote_commit_sha": "7cad96659f3d1c39f0b3913452e71ac3a325e006",
     "source_repository": "mKouko-T/Foundation_Zero",
     "version": "v1.0"
   },
   "dependencies": [
+    "CRBP.md",
+    "Foundation_Zero/BOOT_CONTEXT.md (remote)",
     "docs/Runtime_Contract.md",
+    "BOOTSTRAP.md",
     "docs/Canonical_Model.md",
     "docs/Genesis_Methodology.md",
-    "task.md",
-    "BOOTSTRAP.md",
-    "Foundation_Zero/BOOT_CONTEXT.md (remote)"
+    "task.md"
   ],
   "provenance": {
     "BOOTSTRAP.md": "6c419c6660725321ab2e9f7fb77bf4d326215d3af76d6ea024c4e2f79bc5d9a1",
+    "CRBP.md": "5403c77bb5559550e2dc8fbf4a3f09c436ad78df51f9c941e1ceb0e919f9a489",
     "docs/Canonical_Model.md": "01cc0f84fd0ba7be9947af0c62b2eb27b125454e6c1983c83d3b4e82131d7106",
     "docs/Genesis_Methodology.md": "ec4e145263e11cfe367fee2ca302ce29a69e41a332acc1df0c03f9c9e3c245c3",
     "docs/Runtime_Contract.md": "302c127483e93a5bfbd4bd7fd8ea022b38bc2efcc509b39f081b572e9c4209c7",
-    "task.md": "a88d536d272d3086506ffa51e85668539b4bf43d06f963d6ddec1b22347f8342"
+    "task.md": "1608e1fafda953310f1114eaabc9b3905babd7f17b3f9231254496c451c44f1b"
   },
   "repository": {
     "branch": "main",
-    "commit_sha": "d1406133fb06d0d9b80a381a9df2a1e002abdc63",
+    "commit_sha": "DIRTY",
     "name": "Cornerstone"
   },
   "schema": "v1"

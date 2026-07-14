@@ -1,23 +1,36 @@
 import os
 import re
+import unicodedata
 from pathlib import Path
 from compiler.ir import CanonicalIR
 
 class Parser:
     def __init__(self, root_dir: str = "."):
         self.root_dir = Path(root_dir)
+    def _canonicalize(self, raw_bytes: bytes) -> str:
+        """Applies the canonicalization pipeline per COMPILER_SPEC.md"""
+        # 1. BOM Stripping
+        if raw_bytes.startswith(b'\xef\xbb\xbf'):
+            raw_bytes = raw_bytes[3:]
+        # 2. UTF-8 Decode
+        text = raw_bytes.decode('utf-8')
+        # 3. LF Normalization
+        text = text.replace('\r\n', '\n').replace('\r', '\n')
+        # 4. Unicode NFC Normalization
+        text = unicodedata.normalize('NFC', text)
+        return text.strip()
 
     def parse(self, ir: CanonicalIR):
         """Pass 2: Parsing. Reads raw files and populates the semantic IR."""
         
         # 1. Parse Runtime Rules
-        ir.runtime_rules = self._read_file("docs/Runtime_Contract.md")
+        ir.knowledge_state.runtime_rules = self._read_file("docs/Runtime_Contract.md")
         
         # 2. Parse Canonical Model
-        ir.canonical_model = self._read_file("docs/Canonical_Model.md")
+        ir.knowledge_state.canonical_model = self._read_file("docs/Canonical_Model.md")
         
         # 3. Parse Methodology
-        ir.methodology = self._read_file("docs/Genesis_Methodology.md")
+        ir.knowledge_state.methodology = self._read_file("docs/Genesis_Methodology.md")
         
         # 4. Parse Task State
         ir.execution_context.task_state = self._read_file("task.md")
@@ -33,14 +46,20 @@ class Parser:
         try:
             result = subprocess.run(["git", "rev-parse", "HEAD"], cwd=str(self.root_dir), capture_output=True, text=True, check=True)
             ir.repository_identity.commit_sha = result.stdout.strip()
+            
+            # Check for dirty working tree
+            status = subprocess.run(["git", "status", "--porcelain"], cwd=str(self.root_dir), capture_output=True, text=True, check=True)
+            if status.stdout.strip():
+                ir.repository_identity.commit_sha = "DIRTY"
         except Exception:
             ir.repository_identity.commit_sha = "UNKNOWN"
         
     def _read_file(self, filepath: str) -> str:
         full_path = self.root_dir / filepath
         if not full_path.exists():
-            raise FileNotFoundError(f"Missing required canonical source: {filepath}")
-        return full_path.read_text(encoding="utf-8").strip()
+            raise RuntimeError(f"MISSING FILE FATAL: {filepath} is required for compilation.")
+        raw_bytes = full_path.read_bytes()
+        return self._canonicalize(raw_bytes)
 
     def _parse_bootstrap(self, ir: CanonicalIR):
         """Extracts structural meaning from BOOTSTRAP.md"""

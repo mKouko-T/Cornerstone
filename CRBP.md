@@ -3,6 +3,7 @@
 **Status:** Canonical Boot Sequence
 **Authority:** Cornerstone Runtime
 **Architecture:** Foundation Zero Compiler Pipeline
+**Specification:** Implements `Foundation_Zero/runtime/RUNTIME_SPEC.md`
 
 ---
 

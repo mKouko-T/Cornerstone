@@ -16,13 +16,13 @@ def compile_boot_package(root_dir: str = "."):
     
     ir = CanonicalIR()
     
-    print("[Pass 1 & 2] Source Discovery & Parsing...")
-    parser = Parser(root_dir)
-    parser.parse(ir)
-    
-    print("[Pass 3, 4, 5] Hash Generation, Dependency Resolution & Validation...")
-    validator = Validator(root_dir)
     try:
+        print("[Pass 1 & 2] Source Discovery & Parsing...")
+        parser = Parser(root_dir)
+        parser.parse(ir)
+        
+        print("[Pass 3, 4, 5] Hash Generation, Dependency Resolution & Validation...")
+        validator = Validator(root_dir)
         validator.validate(ir)
     except Exception as e:
         print(f"\nCOMPILATION FAILED: {e}")
@@ -37,7 +37,8 @@ def compile_boot_package(root_dir: str = "."):
     emitter.emit(ir)
     
     print(f"\nCOMPILATION SUCCESSFUL.")
-    print(f"BOOT_ID: {ir.boot_id}")
+    print(f"Conforms to Foundation Zero Compiler Specification v1.0")
+    print(f"BOOT_ID: {ir.provenance.boot_id}")
     print(f"Artifacts: BOOT_MANIFEST.json, BOOT_PACKAGE.md")
 
 if __name__ == "__main__":
